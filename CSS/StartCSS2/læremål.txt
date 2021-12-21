@@ -1,0 +1,11 @@
+# forandre css elementer av alle typer via * ikonet.
+Lage CSS objekt klasse for foreksempel paragraf.
+Bruk av flere css-klasser i ett element.
+Hvis individuelt bruk av css klasse bruk ID i HTML og istede for .klasse bruk #id
+href kan styles med [href] {} 
+href kan styles individuelt med img[src*="filnavn"]{attributes}
+kan også forandre attribute av spesifik link fil ved a[src*="filnavn"]{attribute}
+# gjør det mulig og unngå bruk av id eller klasse gitt spesifike elementer.
+
+pseudo-klasse, som interaction med et gitt element gir en attribute effekt. eksempel: p:hover {attribute;}
+# Hver klasse, id element etc er separert som hver sin bindet string.
