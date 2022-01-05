@@ -1,0 +1,10 @@
+Boks model i CSS- hvordan HTML objekter blir posisjonert og hvordan kontrollere dette via CSS. Modul kalles "Box model"
+
+In this lesson, you’ll learn about the following aspects of the box model:
+
+The dimensions of an element’s box.
+The borders of an element’s box.
+The paddings of an element’s box.
+The margins of an element’s box.
+
+
