@@ -1,1 +1,4 @@
 Trening av css
+Lært font style:helvetica;  Type font
+font-weight: bold; tykk skrift
+font-size: 18px; piksler i teksten.
