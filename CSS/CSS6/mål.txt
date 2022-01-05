@@ -39,3 +39,13 @@ padding-left
 Each property affects the padding on only one side of the box’s content, giving you more flexibility in customization.
 
 padding shorthand gir mulighet til padding for hver side på en linje. 
+padding: 4px 3px 4px 4px;
+følger klokken så top høyre bot venstre
+
+for 3 verdier
+padding: 3px 4px 5px;
+blir top-rightleft-bot
+
+for 2 verdier
+padding: 3px 4x;
+blir topbot - rightleft
