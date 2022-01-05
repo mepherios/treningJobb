@@ -2,3 +2,5 @@ Trening av css
 Lært font style:helvetica;  Type font
 font-weight: bold; tykk skrift
 font-size: 18px; piksler i teksten.
+text-align: right; vil legge tekst ved siden av elementet som holder skriften (parent). Basert på linjen så center vil alt samle seg mot center. 
+
