@@ -49,3 +49,19 @@ blir top-rightleft-bot
 for 2 verdier
 padding: 3px 4x;
 blir topbot - rightleft
+
+
+margin fynker på lik linje med border men gjelder lengden mellom nærmeste andre html elementer.
+margin-top bot osv er lik, samt margin shorthand fynker på samme måte.
+
+
+.pull-quote {
+  width: 350px;
+  margin: 0 auto;
+}
+
+gir margin fra width via auto kommando med margin 0. 
+auto centrerer seg mellom elementene som den er mellom. 
+
+
+margin kollaps: 
