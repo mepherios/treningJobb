@@ -8,3 +8,4 @@ The paddings of an element’s box.
 The margins of an element’s box.
 
 
+HTML holder bokser mens css definerer content, padding, border, margin som er leddene fra content til neste content. Disse måles i height og width
