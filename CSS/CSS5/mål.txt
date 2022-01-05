@@ -6,3 +6,9 @@ text-align: right; vil legge tekst ved siden av elementet som holder skriften (p
 # Farge ved bruk av color:red; eller background-color: red; som farger enten skrift eller bakgrunn av skrift
 Opacity - opactity; 0.5: gir gjennomsiktelighet
 Bakgrunnsbilde i .image backgound-image: url("link");
+!important er sudo for html, overskriver alle declorations, (styles) uansett hvor spesifik. bruk med varsomhet- 
+brukes som dette : 
+linje 1 : p {color: blue !important;}
+linje 2 : .main p{color: blue;}
+linje 1 tar prioritet over 2 på grunn av important deklorasjonen
+
