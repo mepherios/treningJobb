@@ -1,0 +1,24 @@
+modul : Changing the Box Model
+
+mål : Learn about a new box model used to design web pages.
+
+1. Mange CSS properties has standard verdier gitt. eksempell er font-weight:normal; alltid gitt som standard.
+
+samme med box-sizing som er gitt med standard verdi content-box; denne blir påvirket av properties for thickness og padding.
+
+border-box definerer height og width som det mest ytre, så padding osv er definert på innsiden istede for utsiden. Så content width osv er satt som auto. 
+
+* {
+  box-sizing: border-box;
+}
+
+Lært i denne modulen. In this lesson, you learned about an important limitation of the default box model: box dimensions are affected by border thickness and padding.
+
+Let’s review what you learned:
+
+In the default box model, box dimensions are affected by border thickness and padding.
+The box-sizing property controls the box model used by the browser.
+The default value of the box-sizing property is content-box.
+The value for the new box model is border-box.
+The border-box model is not affected by border thickness or padding.
+
