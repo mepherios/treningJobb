@@ -64,4 +64,62 @@ gir margin fra width via auto kommando med margin 0.
 auto centrerer seg mellom elementene som den er mellom. 
 
 
-margin kollaps: 
+margin kollaps: horisontal margin er totalen av de to marginene y1,y2 mens margin x1,y1 er max marginen til den høyeste verdien. Så x=x+x, den største y'en : y=y>y2
+
+
+minimum og maximum høyde/bredde
+min-width, max-width 30px;
+min-height, max-height 30px;
+
+# når max/min blir brutt blir bredden kuttet av og ikke lenger vist. Overflow auto legger til scrollbar hvis trengs i kun x eller y basert på behov. Best bruk.
+
+
+overflow
+# Størrelsen av et objekt er totalen av alle pixelene av objektet. Objektets størrelse: eks bilde 300x200px, padding 10x10px, border 2x2px, 20x10px margin gir total av 364x244px
+overflow brukes for å kontrollere hva skjer når objektet er større en boksen det er i. 
+Alternativene er:
+1 hidden -det som er i overlow blir gjemt.
+scroll - skrollbar blir lagt til i elementet slik at resten av elementet kan bli sett med skrolling
+visible - standard valget, her blir det som er vist utenfor kontainer objektet. 
+overflow: scroll; #eksempell
+finnes flere overflow metoder som overflow x, overflow y, som kan separere horisontal og vertikal overflow innstillinger.
+Brukbart for å legge inn objekter som ikke trenger å flytte på hele websiden som en tekstboks med info som kan separeres fra topp /bunn eller ha masse data i en separat/liten del av websiden.
+
+
+Hver webside har et standard css sheet som gir css regler for en webside. Vi kan fjerne disse med å resette disse verdiene med en kommando.
+
+* {
+  margin: 0;
+  padding: 0;
+}
+NB: 0 er både en binary 0 og pixel 0 så trenger ikke en gitt verdi.
+NB2: * er universal ruleset markør.
+
+Denne koden resetter alle margin og padding verdier. 
+
+visiblity: hidden; lar objektet bli men fjerner den fra utseende. 
+
+
+
+Modul review
+
+In this lesson, we covered the four properties of the box model: height and width, padding, borders, and margins. Understanding the box model is an important step towards learning more advanced HTML and CSS topics. Let’s take a minute to review what you learned:
+
+The box model comprises a set of properties used to create space around and between HTML elements.
+The height and width of a content area can be set in pixels or percentages.
+Borders surround the content area and padding of an element. The color, style, and thickness of a border can be set with CSS properties.
+Padding is the space between the content area and the border. It can be set in pixels or percent.
+Margin is the amount of spacing outside of an element’s border.
+Horizontal margins add, so the total space between the borders of adjacent elements is equal to the sum of the right margin of one element and the left margin of the adjacent element.
+Vertical margins collapse, so the space between vertically adjacent elements is equal to the larger margin.
+margin: 0 auto horizontally centers an element inside of its parent content area, if it has a width.
+The overflow property can be set to display, hide, or scroll, and dictates how HTML will render content that overflows its parent’s content area.
+The visibility property can hide or show elements.
+
+properties: 
+width
+height
+padding
+border
+margin
+overflow
