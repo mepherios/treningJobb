@@ -22,4 +22,11 @@ top: 50px; fjerner 40px fra toppen, bot fra bunnen, left venstre right høyre.
 position: absolute; gjør at andre elementer ignorerer dette elementet. 
 Når denne er brukt vil den følge siden når den scroller. Hvis du ikke vil at dette skal skje bruker du position: fixed; med top, bot, right, left etc. Da blir den beholdt på samme posisjon i siden.
 
+Vi bruker position: sticky; top 40px etc for å beholde en objekt box på en spesifikk plass
+
+z index gir prioritet for hva som skal bli vist hvis 2 bokser har overlap.
+
+inline elementer kan ikke bli forandret i height/width fordi de er begrenset av sin egen boks. 
+block bruker hele listen, og alle inline kan bli gjort til block. Fyller hele vidden av siden.
+inline-block kan være ved siden av hverandre i en linje, bare definer bredden deres.
 
