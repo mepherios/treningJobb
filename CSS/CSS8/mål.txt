@@ -42,7 +42,7 @@ clear: right; gjør at objektet ikke kolliderer med høyre.
 clear: both; ingen kollisjon høyre/venstre
 clear: none; kan kollidere med begge sidene.
 
-float blir dårlig med inline-block elementer. Men clear er bra. 
+float blir dårlig med inline-block elementer. Men clear er bra.
 
 review: 
 
