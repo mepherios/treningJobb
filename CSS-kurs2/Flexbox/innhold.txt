@@ -11,3 +11,8 @@ Når en gitt div har en spesifikk flex vil elementene i denne oppføre seg anner
 En flexbox vil overstyre sine barn sin størrelse for å passe inn i flex-containeren.
 
 
+justify-content: flex-start;
+
+justify-content brukes for å styre oppførselen til mellomrom mellom flex children/elementer. 
+
+align items, gjør det mulig å flexe vertikalt. Standarden er at den gjør dette med mindre en maks eller spesifikk høyde er gitt.
