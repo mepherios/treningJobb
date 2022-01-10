@@ -1,0 +1,1 @@
+lære bruk av ekstern og intern linking for bruk av alternative fonts enn web safe fonts.

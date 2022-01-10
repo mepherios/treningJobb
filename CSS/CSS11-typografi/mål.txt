@@ -37,3 +37,18 @@ font-style: italic;
 
 text transformasjon: gjøre hele teksten til uppercase, lowercase.
 text-transform: uppercase;
+
+text layout. Letter spacing, mellomrom mellom bokstaver.
+letter-spacing: 2px;
+letter-spacing: 0.5em
+
+
+word spacing
+word-spacing: 0.3em;
+NB: em er brukt pga den er basert på størrelsen av fonten istede for piksler.
+
+line-height: 1.4;
+variabler = constant, %, pixler, (N)em (2em)
+unitless er foretrukket på grunn av den er bestemt basert på text størrelsen.
+
+text-aligntment: justify; # denne gjør at text starter og slutter på samme punkt som i aviser.

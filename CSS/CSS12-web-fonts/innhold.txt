@@ -1,0 +1,34 @@
+Web fonts. 
+Web safe er fonter som kan brukes av alle os/browsers.
+Kan bruke uendelig mange fonts.
+google fonts / adobe fonts er gratis font services som kan brukes via html link. 
+Kan også betale via fonts.com, disse lastes ned og hostes i sidens style filer.
+
+https://fonts.google.com/
+# Her kan vi laste ned eller linke til gitte fonter for bruk.
+Her gis info om links for header elementet som brukes og hvordan bruke den i css.
+
+Alternativt fra å linke til nett, kan vi bruke @font-face ruleset med nedlastede fonter.
+4 filtyper: OTF;TTF WOFF, WOFF2
+OTF (OpenType Font)
+TTF (TrueType Font)
+WOFF (Web Open Font Format)
+WOFF2 (Web Open Font Format 2)
+
+WOFF2 mest prograssiv, best å inkludere WOFF2, WOFF og TTF for kompabilitet på alle browsers.
+
+Google web fonts helper kan generere flere filtyper gitt en for å få det som trengs.
+
+https://google-webfonts-helper.herokuapp.com/fonts 
+
+eksempell : 
+
+@font-face {
+  font-family: 'MyParagraphFont';
+  src: url('fonts/Roboto.woff2') format('woff2'),
+       url('fonts/Roboto.woff') format('woff'),
+       url('fonts/Roboto.ttf') format('truetype');
+}
+
+Her defineres font-family self, som MyParagraphFont som brukes til å referere til fonten senere.
+Skrives inn direkte i CSS. 
