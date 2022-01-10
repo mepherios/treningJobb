@@ -1,0 +1,39 @@
+Lære bruk av HSL 
+
+Hue- Saturation - Lightness
+
+hsl(hue,s,l)
+s,l = %
+h = 0-360 grader på fargehjulet
+saturation er hvor sterk fargen er-går mot grå. lightness = lys.
+
+Opacity and Alpha
+for å bruke opacity brukes hsla istede for hsl. denne gir gjennomsiktelighet. bruker et decimalnummer. hsla(30,25%,25%,0.1)
+a står for alpha som også kalles opacity
+
+Opacity kan brukes i rgb også, rgba(254,45,98,0.33)
+Decimalverdien gir hvor mye som skal gjennomskinnes.
+Alpha kan kun brukes med HSL RGB og hex farger.
+color: transparent; gir 0% opacity som kan brukes. er det samme som rgba(0,0,0,0)
+
+
+review: 
+Review
+We’ve completed our extensive tour of the colors in CSS! Let’s review the key information we’ve learned.
+
+There are four ways to represent color in CSS:
+
+Named colors—there are more than 140 named colors, which you can review here.
+Hexadecimal or hex colors
+Hexadecimal is a number system with has sixteen digits, 0 to 9 followed by “A” to “F”.
+Hex values always begin with # and specify values of red, blue, and green using hexadecimal numbers such as #23F41A.
+Six-digit hex values with duplicate values for each RGB value can be shorted to three digits.
+RGB
+RGB colors use the rgb() syntax with one value for red, one value for blue and one value for green.
+RGB values range from 0 to 255 and look like this: rgb(7, 210, 50).
+HSL
+HSL stands for hue (the color itself), saturation (the intensity of the color), and lightness (how light or dark a color is).
+Hue ranges from 0 to 360 and saturation and lightness are both represented as percentages like this: hsl(200, 20%, 50%).
+You can add opacity to color in RGB and HSL by adding a fourth value, a, which is represented as a percentage.
+Great job! Feel empowered to add a bit of color to each of your projects!
+
