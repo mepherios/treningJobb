@@ -17,6 +17,7 @@ html {
     text-align: center;
     font-family: Georgia;
     text-transform: uppercase;
+    letter-spacing: 0.3em;
   }
   
   h2 {
@@ -33,7 +34,7 @@ html {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-  
+    text-align: justify;
   }
   
   
@@ -67,13 +68,15 @@ html {
     margin-top: 74px;
     padding: 40px 0 100px 0;
     background-color: #4D00FF;
-  }
+    }
   
   .banner p {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     color: #ffffff;
     font-weight: lighter;
+    word-spacing: 0.25em;
+    line-height: 1.4;
   }
   
   
@@ -131,4 +134,5 @@ html {
     font-weight: normal;
     font-style: italic;
   }
+  
   
