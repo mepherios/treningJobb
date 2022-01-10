@@ -1,0 +1,13 @@
+2 Typer flexbox elementer
+1: flex container
+2: flex items
+Alle barn av flex container er flex items.
+
+Får å designere et element til en flex container sett display til flex eller inline-flex.
+Flex brukes for å fikse posisjonene til elementer på en side.
+
+Når en gitt div har en spesifikk flex vil elementene i denne oppføre seg annerledes.
+
+En flexbox vil overstyre sine barn sin størrelse for å passe inn i flex-containeren.
+
+
