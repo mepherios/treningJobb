@@ -1,0 +1,30 @@
+Denne modulen gjelder typografi i CSS.
+
+Mål for denne modulen.
+Style og transformere fonts.
+Hvorden legge ut tekst på en side.
+Legge til eksterne fonter til et websted.
+
+Det viktigste på en webside er normalt teksten så er viktig for å øke brukervennligheten.
+
+Inntastingsmetode.
+font-family: Arial; 
+for fler-ords-fonter bruk
+font-family: 'Times New Roman'; 
+Noen fonter fynker i alle operativsystem/browsers, disse kalles web safe fonts.
+Web safe fonts kan brukes som backup fonts hvis førstevalget ikke fynker.
+For backups tast:
+
+font-family: Caslon, Gergia, 'Times New Roman';
+Her blir Georgia og Times backup for Caslon.
+Dette kalles en font stack, som inneholder hoved og alt fonts, som normalt ligner hverandre.
+
+Det finnes forskjellige typer av fonts. 
+Serif, disse inneholder ekstra detaljer på enden av bokstavene.
+Sans serif inneholder ikke dette.
+Når en font stack blir bygget kan vi bruke endetag for å bevare font typen. 
+Eksempell:
+font-family: Caslon, Gerogia, 'Times New Roman', serif;
+
+Endetaggen serif vil bruke hvilken som helst serif hvis ingen av de tidligere eksisterer.
+
