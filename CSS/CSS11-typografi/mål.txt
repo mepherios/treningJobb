@@ -28,3 +28,12 @@ font-family: Caslon, Gerogia, 'Times New Roman', serif;
 
 Endetaggen serif vil bruke hvilken som helst serif hvis ingen av de tidligere eksisterer.
 
+font-weight definerer tykkelsen på skrift, går fra 1-1000, standard er 100x inkrementer. normal=400, 700=bold, ikke alle fonter har numerisk
+verdi. Stanard er å sjekke om fonten har numerisk font weight.
+Standard verdier for font-weight er: bold, normal lighter, bolder. bolder>normal, er kun en tykkere en standard
+
+font-style definerer om teksten er i italics, 
+font-style: italic;
+
+text transformasjon: gjøre hele teksten til uppercase, lowercase.
+text-transform: uppercase;
