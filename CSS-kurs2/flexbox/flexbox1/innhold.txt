@@ -20,3 +20,6 @@ align items, gjør det mulig å flexe vertikalt. Standarden er at den gjør dett
 Flex items blir skalert proprsjonalt med flex containeren når elementene i containeren er for store.
 Motsatt, når elementene er for små blir de ikke skalert opp så vi bruker flex-grow for å få dette til å skje.
 
+flex-shrink kan stille inn hvor mye et element skal proprsjonalt krympes.
+
+
