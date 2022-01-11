@@ -1,0 +1,20 @@
+grid deler opp info opp i koloner så store som du vil ha de.
+med grid-template 1fr / 1fr blir det 1 kolonne med 1/1 størrelse lengde og 1/1 bredde. Vertikal telling er i del 1, horisontal i del 2 av
+must er display: grid;
+
+display:grid;
+grid-template: 1fr / 1fr;
+
+repeat : kjører samme template etc likt.
+
+.grid {
+  display: grid;
+  width: 300px;
+  grid-template-columns: repeat(3, 100px);
+}
+
+= grid-template-columns: 100px 100px 100px;
+
+## grid er gitt i rows / columns, kan også repetera data som repeat(3, 1fr) 
+
+Kan forandre grid items også ikke bare hele grid'en.
