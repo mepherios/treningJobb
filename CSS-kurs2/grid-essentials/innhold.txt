@@ -18,3 +18,8 @@ repeat : kjører samme template etc likt.
 ## grid er gitt i rows / columns, kan også repetera data som repeat(3, 1fr) 
 
 Kan forandre grid items også ikke bare hele grid'en.
+
+grid-row-start: 3;
+grid-row-end: 6;
+= 
+grid-row: 3 / 6;
