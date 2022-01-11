@@ -22,4 +22,63 @@ Motsatt, når elementene er for små blir de ikke skalert opp så vi bruker flex
 
 flex-shrink kan stille inn hvor mye et element skal proprsjonalt krympes.
 
+flex-basis som gir start verdi i pixler for skalering.
+brukes sammen med flex-grow. flex-shrink. 
+forkortelse kan gjøres med, 
+flex: 2 1 150px; 
+definerer som grow-shrink-basis (pixler)
+
+kan også definere kun grow, shrink med
+flex: 2 1;
+
+kan også sette flex-grow og flex-basis med
+flex: 2 50px;
+
+Kan ikke definere flew-shrink flex-basis med kun 2 verdier.
+
+flex-wrap gjør istede for skalering fyller heller ny linje med tekst eksempell istede for å skalere ned text størrelse.
+
+flex-wrap: wrap; 
+sender element til neste linje hvis det blir utfylt.
+
+flex-wrap: nowrap;
+gjør kun flex shrink.
+
+flex-wrap: wrap-reverse; 
+gjør som wrap bare reversert, så gitt 5 elementer er nr 5 nr 1, og de fleste elementene er på bunnen istede for toppen.
+
+gitt dette kan vi bruke justify-content: space-around; 
+som gjør at elementene starter fra midten.
+
+align-content legger elementene i forhold til flex containeren. 
+
+align-content: flex-start;
+gir alignment i starten av containeren.
+
+align-content: flex-end;
+gir alignment i slutten
+
+align-content: center;
+gir alignment i midten av containeren.
+
+align-content: space-between; 
+gir alignment fra start, end.
+
+align-content: space-around;
+gir for linjene, gjennomsnittet fra start, midtpunktet og legger elementer i center her.
+
+align-content: stretch; er basen. i koden er denne ikke gitt men er kalt, gjør ingenting siden den blir fremdeles inkludert.
+
+
+alle disse har kun vært stretch vertikalt og wrap horizontalt. 
+Vi kan bytte ut aksene med flex-direction. gitt vi har property flex-direction, value column da får vi ordering vertikalt istede for horisontalt.
+
+gitt flex-grow, vil verdiene vokse horisontalt som betyr rettningen er byttet når en kolumn og flex-direction er brukt.
+
+flex-flow er forkortelsen på lik linje med flex og fyngerer på følgende måte:
+
+flex-flow: column wrap;
+=
+flex-direction: column;
+flex-wrap: wrap;
 
