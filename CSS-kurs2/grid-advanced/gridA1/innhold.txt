@@ -1,0 +1,8 @@
+grid-template-areas: navngir blokkene av kolumns etc som blir brukt og for hva. brukes til å feste til andre css elementer.
+Overhead er z indexen som velger topp/bunpunkt av elementer.
+Kan også få opp med grid area som gir grid-area: 5 / 7 / 7 / 10 
+Denne gir start fra 5 til 6 of 7 til 9.
+
+justify-items: center; setter alle verdiene i midten.
+justify-content: center; setter alle elementene i senter.
+
