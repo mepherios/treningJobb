@@ -40,3 +40,4 @@ At this point, we’ve covered a great deal of different ways to manipulate the 
     grid-area is a shorthand for grid-row-start, grid-column-start, grid-row-end, and grid-column-end, all in one line
 
 You have seen how to set up and fill in a grid and you now have one more CSS positioning technique to add to your toolkit! Let’s do some practice to solidify these skills.
+align-items styrer hvordan elementet skal legges, ved stretch blir alle like, ved start blir start punkt likt etc.
