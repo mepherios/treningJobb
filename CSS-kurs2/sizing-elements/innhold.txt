@@ -43,4 +43,7 @@ NB2: Kun bruk 100% hvis det ikke er brukt padding, border og margin pga overflow
 ved å sette 100% i bilder kan vi beholde hele bildets størrelse, 
 gjør zooming osv ut til å fyngere.
 
+min/max-width for å beholde integriteten av containeren, som bilder etc.
+min/max-width for det samme.
 
+skalering. 
