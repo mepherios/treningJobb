@@ -1,0 +1,20 @@
+Variables
+
+Imagine that you have just finished the final version of a large client website. 
+Everything looks great and you are happy with its layout and design. 
+But when you show your client the finished site they ask you to change one of the main background colors to something with more pop. 
+That doesn’t seem like too big of a task. 
+You just need to find a new color and replace all the old background color values with the new one, 
+except the old color is used a lot so it becomes extremely time-consuming. 
+CSS actually has a solution for these types of issues when they arise—variables.
+
+In programming languages, variables are symbolic names, or containers, for storing values/information. 
+We can think of them in a similar manner to the way that “x” and “y” are often used as placeholders for values in mathematics. 
+Variables allow information to be maintained and referenced in multiple locations. They also make it easier to read and understand code. 
+Especially when it’s someone else’s!
+
+CSS has variables in its own style—more specifically, they are called Custom Properties. 
+These variables can be used to hold specific values that can be reused throughout the stylesheet. 
+Variables mitigate the need to repeat values and make values easier to understand what they are used for. 
+For instance, --main-red-color is much easier to understand than #7f3f3f.
+By the end of this lesson, you will be able to use CSS variables to make your programs more organized, efficient, and legible!
