@@ -1,0 +1,80 @@
+Duration
+
+To create a simple transition in CSS, we must specify two of the four aspects:
+
+    The property that we want to transition.
+    The duration of the transition.
+
+a {
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+
+# Styrer hvordan timing blir gitt.
+transition-timing-function: linear;
+
+transition-delay: 750ms; 
+gir delay på når transition blir gjort.
+
+shorthand.
+
+transition-property: color;
+transition-duration: 1.5s;
+transition-timing-function: linear;
+transition-delay: 0.5s;
+
+transition: color 1.5s linear 0.5s;
+
+
+combinasjoner. 
+
+transition: color 1s linear,
+font-size 750ms ease-in 100ms;
+
+
+.button span,
+.button div,
+.button i {
+    transition: width 750ms ease-in 200ms,
+    left 500ms ease-out 450ms,
+    font-size 950ms linear;
+}
+
+# kombinasjoner for flere forskjellige buttons typer osv.
+
+# Gir universal oppførsel for alle transition elementer.
+transition: all 1.5s linear 0,5s;
+
+.button span, 
+.button div, 
+.button i {
+  transition: all 1.2s ease-out 0.2s;
+}
+
+
+
+
+Review
+
+CSS Transitions are a powerful tool for providing visual feedback to users. We’ve learned a lot about transitions, so let’s review:
+
+CSS Transitions have 4 components:
+
+    A property that will transition.
+    The duration which describes how long the transition takes.
+    The delay to pause before the transition will take place.
+    The timing function that describes the transition’s acceleration.
+
+A simple transition can be described with a property and a duration, which can be written like this:
+
+transition-property: color;
+transition-duration: 1s;
+
+Many properties’ state changes can be transitioned, including color, background color, font size, width, and height. all is also a valid transition property that causes every changing property to transition.
+
+The shorthand property transition can be used to describe all four components of a transition at once. By using the comma (,) operator, many transitions can be described in one CSS rule.
+
+If you want to learn more about CSS Transitions, we recommend MDN’s Using CSS Transitions doc.
+
+Good work, you now have the tools to make your web pages come to life!

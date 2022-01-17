@@ -1,0 +1,10 @@
+Størrelse er em, som gis utifra standarden til webleseren. 
+Kan overskrives som følgende: Da blir 18px satt som 1em. i splash settingsen. så 1.5em = 27px.
+
+.splash-section {
+  font-size: 18px;
+}
+ 
+.splash-section h1 {
+  font-size: 1.5em;
+}
