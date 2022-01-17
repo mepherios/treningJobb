@@ -1,0 +1,108 @@
+Media query brukes for å lage regler basert på webstørrelser.
+
+@media er nøkkelord som begynner en media query regel.
+only screen dikterer hvilke type device som bruker denne reglen.
+css har forskjellige regler basert på media-typen, screen,print,handheld.
+bruk av en css only regel gir bare regelen til en gitt enhet.
+
+and(max-width : 480px) kalles en media feature. som gjør at regelen kun gjelder devices med vidde mindre enn 480px.
+Media features gir reglene for om noe skal printes i en webside.
+CSS regler er nestet i en media query bracket. 
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+
+Range.
+Spesifikke skjermstørrelser kan bli satt med min-width, min height og max-width, max-height.
+Kan bruke en bredde for å lage til en gitt rekke/lengde av verdier.
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* ruleset for 320px - 480px */
+}
+
+@media only screen and (min-width: 320px) { 
+    /* ruleset for >= 320px */
+}
+ 
+ 
+@media only screen and (min-width: 480px) { 
+    /* ruleset for >= 480px */
+}
+
+
+DPI dots per inch
+
+@media only screen and (min-resolution: 300dpi) {
+    /* CSS for high resolution screens */
+}
+Kan brukes for å vise high fidelity content når det er et poeng i det.
+
+
+@media only screen and (min-resolution: 150dpi){
+    .logo {
+      background-image: url("../img/spaceship@2x.png");
+    }
+  }
+
+eksempell praktisk bruk.
+
+
+operator.
+and, kan brukes for å legge til flere display-krav. 
+
+@media only screen and (max-width: 480px) and (min-resolution: 300dpi) {
+    /* CSS ruleset */
+}
+
+# Her gis en min resolution og minste bredde.
+hvis en skjerm har små og lav resolution skjermer trenger større tekst.
+
+
+# max og min resolution kan brukes : 
+
+@media only screen and (max-resolution: 150dpi) and (max-width: 480px){
+
+}
+
+Kan bruke media-orientering også.
+
+@media only screen and (min-width: 480px), (orientation: landscape) {
+    /* CSS ruleset */
+}
+
+Vi bygger ut media-queries basert på størrelse og orientasjon av en skjerm. og resolution.
+Hver av disse kalles ett breakpoint. 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS ruleset */
+}
+
+Dette er en som kun ser etter landscape orientering med gitt resolution.
+Siden nye resolution skjermer lages hvert år bygger vi ikke ut websiden for kun en gitt range, men ombygger css'en basert på når den bryter.
+Derfor kalt breakpoint. Når sidens css ikke lenger fynker, lag en ny.
+
+Har en skjermguide som brukes basert på skjermstørrelser vi bruker.
+
+Media Queries
+Review: Media Queries
+
+Incredible work! You learned how to change the way a website appears on different screens with media queries and breakpoints
+
+Throughout this lesson, you learned:
+
+    When a website responds to the size of the screen it’s viewed on, it’s called a responsive website.
+    You can write media queries to help with different screen sizes.
+    Media queries require media features. Media features are the conditions that must be met to render the CSS within a media query.
+    Media features can detect many aspects of a user’s browser, including the screen’s width, height, resolution, orientation, and more.
+    The and operator requires multiple media features to be true at once.
+    A comma separated list of media features only requires one media feature to be true for the code within to be applied.
+    The best practice for identifying where media queries should be set is by resizing the browser to determine where the content naturally breaks. Natural breakpoints are found by resizing the browser.
+
+With your knowledge of media queries and CSS, you can make websites that look great on any device, from a small phone to a huge television. By making your websites responsive, you’ll make it possible for any of your users to have a great experience.
+
+
+
