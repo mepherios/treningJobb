@@ -8,3 +8,39 @@ Kan overskrives som følgende: Da blir 18px satt som 1em. i splash settingsen. s
 .splash-section h1 {
   font-size: 1.5em;
 }
+
+rem er som em men for html-taggen. så mer "universal" bruk.
+
+html{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+så rem blir altid lik 20px.
+
+
+percentages- height & width. 
+brukes i non-text html elementer.
+brukes i box-model verdier som width, height, padding, border og margins. og kan brukes i
+positioning som top bottom left right.
+
+.main {
+  height: 300px;
+  width: 500px;
+}
+ 
+.main .subsection {
+  height: 50%;
+  width: 50%;
+}
+
+NB: parent må settes først. 
+NB2: Kun bruk 100% hvis det ikke er brukt padding, border og margin pga overflow.
+
+ved å sette 100% i bilder kan vi beholde hele bildets størrelse, 
+gjør zooming osv ut til å fyngere.
+
+
