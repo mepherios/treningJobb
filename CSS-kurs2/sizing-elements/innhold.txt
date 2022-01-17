@@ -47,3 +47,23 @@ min/max-width for å beholde integriteten av containeren, som bilder etc.
 min/max-width for det samme.
 
 skalering. 
+
+
+.container {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+ 
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+Hidden brukes for å skjule content som er større en containeren.
+height:auto styrer at bilde sin høyde automatisk blir gitt i forhold til bredden.
+display block gjør at bildet får sin egen linje og ikke blir gitt en rar proposjon.
+
+
+skalere bakgrunnsbilder. 
