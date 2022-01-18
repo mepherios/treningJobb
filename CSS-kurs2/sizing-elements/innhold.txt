@@ -90,3 +90,34 @@ Let’s review what you learned:
     A background image of an HTML element will scale proportionally when its background-size property is set to cover.
 
 Relative units of measurement are a first step towards incorporating responsive design in a website. When combined with more advanced responsive techniques, you can create a seamless user experience regardless of a device’s screen size.
+
+local vs global scope gir muligheten for å forandre en global variabel lokalt hvis man vil.
+
+fallback values er når en verdi er gitt feil variabel, eksempell tekst størrelse er gitt en farge.
+Dette er en sekundærverdi som blir gitt som alternativ som nummer en.
+NB max 2 argumenter.
+NB kan sette fallback i fallbacken. 
+
+body {
+  background: var(--main-background-color, #F3F3F3);
+}
+
+fallback av fallback
+
+body {
+/* --favorite-orange if --main-color is invalid and red if --favorite-orange is invalid */
+font-color: var(--main-color, var(--favorite-orange, red));
+
+Fallback av fallback av fallback.
+
+body {
+/* --favorite-orange if --main-color is invalid and red if --favorite-orange is invalid and --favorite-yellow if --favorite-orange is invalid */
+font-color: var(--main-color, var(--favorite-orange, var(--favorite-yellow, yellow)));
+}
+
+Når backup blir lagt, bygg en uendelighetsstige. aka alle vars, er var endelige.
+
+.artist:nth-child(even) {
+  background: var(--group-two-background-color,var(--backup-color-1,var(--backup-color-2)));
+}
+
