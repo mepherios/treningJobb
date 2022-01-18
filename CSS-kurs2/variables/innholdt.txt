@@ -58,4 +58,6 @@ body {
 }
 
 
+:root {}
+brukes for å definere global scope variabler.
 

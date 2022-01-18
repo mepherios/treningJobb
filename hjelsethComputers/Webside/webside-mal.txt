@@ -1,0 +1,77 @@
+webside : 
+Header - fjernhjelp + icon link
+
+Div0
+venstre icon altid til venstre sammen med dropdown meny. Kun ICON gitt for liten skjerm. Søk i fullskjerm ikke liten.
+
+Div1 : 
+Bakgrunn video: med h1 hjelseth computers, 
+tittel i center av flexbox. # Fjernes i mobil-versjon. 
+knapper for ring/send i flexbox. Når bredden er for liten, stable de opp. egen style
+Bestemt høyde
+
+tittel sentrert
+div2 
+flexbox /css-grid med de forskjellige avdelingene. link egen style
+ramme rød - gitt mobil størrelse sorter bredden horizontalt. 
+
+div3
+h2 rød 
+h2 tekst
+
+div4
+flexbox med 2 containers med text og link.
+
+div5
+kontakt-skjema
+
+h2- rød kontaktskjema text
+
+# x2 med tekst 
+h3-navn
+inntast-boks navn
+x1 innstastboks for nummer
+x1 innstast for text med utvidelse.
+h2 svart tekst
+send knapp.
+
+/div5
+
+div6
+
+dropdown-meny med dropdown-meny 
+# av hvilke avdelinger som finnes
+i dropdown meny av dropdown meny- 
+container tittel, 
+bilde,
+h2 rød navn 
+h2 tittel
+icon - nummer
+icon - email
+
+div7
+h1 rød Aktuelt
+
+flexbox med h2 rød tittel
+h3 tekst
+h3 rød link
+/div7
+
+div8
+footer rød linje
+
+flexbox med lister med tittel og link
+
+/div8
+
+div9
+footer
+icon fb, linked-in left flexbox 
+icon x2 høyre flexbox
+
+/div9
+
+
+hjelseth personvern 
+
+footer-knapp som følger hele websiden, sender opp til toppen av websiden.
