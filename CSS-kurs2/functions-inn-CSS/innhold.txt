@@ -1,0 +1,8 @@
+Eksempler av funksjoner i CSS er blant annet repeat() or var()
+
+syntax for CSS funksjoner :
+ 
+h1 {
+  property: function-name(argument);
+} 
+
