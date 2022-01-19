@@ -1,0 +1,37 @@
+Readability:
+font-size
+font-height
+letter-spacing
+
+Struktur:
+text-align: left;
+max-width: 85ch;
+min-width: 45ch;
+
+farge:
+høy kontrast fra bakgrunn til text eksempell.
+>kontrast
+Det er kontrast-rettningslinjer.
+
+According to the Web Content Accessibility Guidelines (WCAG), contrast ratios are classified using a 3-tier hierarchy:
+
+    Level A is the minimum level.
+    Level AA includes all Level A and AA requirements. Many organizations strive to meet Level AA.
+    Level AAA includes all Level A, AA, and AAA requirements.
+
+The recommended minimum contrast ratios between the background and its text using these standards are as follows:
+
+    4.5:1 (AA criteria)—Text that is less than 24px (not bold) and 19px (bold).
+    3:1 (AA criteria)—Text larger than 24px (not bold) and 19px (bold).
+    7:1 (AAA criteria)—Text that is less than 24px (not bold) and 19px (bold).
+    4.5:1 (AAA criteria)—Text larger than 24px (not bold) and 19px (bold).
+
+Kan bruke tools for å finne om kontrasten er i riktig ratio.
+
+color-contrast skal være gitt med en minimum kontrast ratio med 4.5:1 
+Må fikse for alle kontraster, også input bokser.
+
+Contextual Readability: Interactivity:
+Abbreviations, forkortelser skal ha den fullstendige texten tilgjengelig. 
+<abbr title='Laughing out loud'>lol</abbr>
+
