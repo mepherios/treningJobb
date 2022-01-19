@@ -6,3 +6,7 @@ h1 {
   property: function-name(argument);
 } 
 
+background-image: url('link'); gir bakgrunn bilde
+background-position: center; senter posisjon på bilde.
+background-size: cover; bruker bilde over hele bakgrunnen.
+
