@@ -87,3 +87,5 @@ aria hidden fjerner fra skjermlesere. er en egen klasse.
 DOM er html kode som lest. Hvis man ikke kan gå gjennom elementene vist på siden uten en mus/input og må bruke tale
 så er dette dårlig. flex direction-reversed er en dårlig måte å kjøre fordi den er vanskelig å lese gjennom for DOM.
 Visuelt skal DOM være lik når det kommer til rekkene.
+
+t
