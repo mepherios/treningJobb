@@ -9,7 +9,7 @@ max-width: 85ch;
 min-width: 45ch;
 
 farge:
-høy kontrast fra bakgrunn til text eksempell.
+høy kontrast fra bakgrunn til text eksempel.
 >kontrast
 Det er kontrast-rettningslinjer.
 
@@ -35,3 +35,55 @@ Contextual Readability: Interactivity:
 Abbreviations, forkortelser skal ha den fullstendige texten tilgjengelig. 
 <abbr title='Laughing out loud'>lol</abbr>
 
+# Gir en pointer ved hover.
+.button:hover {
+  cursor: pointer;
+}
+
+Contextual Readability Color 
+Farge kan brukes for å gi context clues som allerede besøkt webside.
+a:visited {
+    color: curple;
+}
+
+Kan også brukes ved fokus av elementer. 
+
+input:focus {
+    border-color: blue;
+}
+
+alternativ3 er for state av object, som error, riktig eller mangel. eller info.
+
+
+input[type=text]:focus {
+  color:blue;
+}
+
+Kan legge til flere spesifiers som hjelper.
+
+
+Synlighet / visibility 
+For å skjule elementer fra en webside har vi to valg.
+display: none;
+visibility: hidden;
+
+visibility skjuler for alle, mens display kun for display-viewers.
+
+tredje metode skjuler kun for skjerm-lesere brukt for iconer osv.
+<p class='hidden-sentence' aria-hidden='true'>This is hidden from screen readers!</p>
+
+aria-hidden='true' definerer dette.
+
+
+.protected-link-container a {
+  visibility: hidden;
+}
+
+Gjemmer link fra alle.
+
+<button class='btn submit-btn' aria-hidden='true'>
+aria hidden fjerner fra skjermlesere. er en egen klasse.
+
+DOM er html kode som lest. Hvis man ikke kan gå gjennom elementene vist på siden uten en mus/input og må bruke tale
+så er dette dårlig. flex direction-reversed er en dårlig måte å kjøre fordi den er vanskelig å lese gjennom for DOM.
+Visuelt skal DOM være lik når det kommer til rekkene.
