@@ -1,0 +1,1 @@
+Mål i denne er å finne vanlige feil som gjør en webside ukomfortabel å bruke, readability er en av disse.
