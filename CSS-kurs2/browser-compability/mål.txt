@@ -1,0 +1,88 @@
+Forstå hvordan websider blir sett på forskjellige browsers og hvordan fikse dette slik at det ikke er et problem.
+
+Eksempel 1 :
+https://static-assets.codecademy.com/Courses/Learn-CSS/Browser-Compatibility/Pleasant-Cafe/index.html
+
+Grunnen dette skjer er fordi browsers ikke får alle CSS3 oppgraderingene umiddelbart som fører til mangler i gitte browsers.
+
+https://caniuse.com/ er en webside som kan brukes for å vise om en CSS feature fynker i gitte browsers.
+
+I eksempel 1 er det CSS Reflections som ikke er integrert enda som derfor gir en annen utseende i prosjektet.
+
+Forskjellige browsers bruker forskjellige engines for å kjøre css. 
+
+HTML, CSS, and JavaScript in the browser. For example, Chrome, Opera, and Edge use Blink as their browser engine, whereas Firefox uses Gecko and Safari uses Webkit. 
+Each of these engines renders features such as margins, padding, colors, or text slightly differently. This is because different browsers have different default styles.
+
+For example, the default text color of the <a> element in most browsers is #0000EE, but in Internet Explorer 11, the value is #0066cc. 
+We can use tools such as browserdefaultstyles.com to compare default styles across browsers.
+
+There are also tools that we can use, such as normalize.css and minireset.css, 
+to eliminate differences between browser default styles and ensure that all elements are rendered the same way across browsers.
+
+Vi kan løse font-problemet med å sette   
+
+i regelsettet strong: og i ul:
+list-style: none;
+
+font-weight: bold;
+
+dette gir likhet i begge browsers.
+
+
+vendor prefix er en prefix som brukes for når under utvikling.
+Denne viser hvilke funksjoner som ikke fynker og alternative funksjonen som brukes da.
+Godt beskrevet her ;
+
+Vendor prefixes are prefixes for property names that were developed as a way of testing new CSS features or standards before browsers fully supported them. 
+These prefixes were never intended to be used on production websites, 
+but they are sometimes required to use certain new and cutting-edge features or to support older versions of browsers when those features were cutting edge.
+
+Common vendor prefixes include:
+
+    -webkit- for Chrome, Safari, newer versions of Opera, and almost all iOS browsers, including Firefox for iOS
+    -moz- for Firefox
+    -ms- for Internet Explorer and Microsoft Edge
+    -o- for old pre-WebKit versions of Opera
+
+Eventually, these experimental features are fully adopted into all browsers, at which point the vendor prefix is no longer required. 
+Remember that browsers adopt features at different rates—for newer CSS features, you may need to include prefixed property names alongside. 
+An example of this for the transform property would be as follows:
+
+
+.tilted {
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+
+Rather than looking through every CSS feature on your site to determine which features require vendor prefixes, 
+you can also use tools such as Autoprefixer to automatically include all vendor prefixes for the features that require them.
+https://github.com/postcss/autoprefixer
+
+
+-webkit-background-clip: text;
+Dette brukes når en gitt ting ikke fynker i problemet.
+Gitt at den trengs å fynke der også når :
+	background-clip: text;
+er brukt
+
+Polyfills
+
+It’s difficult to keep track of which CSS properties are not supported in certain browsers and their versions. 
+Polyfills are JavaScript codes that allow older browsers to behave as though they understand more advanced features than they actually do. 
+These codes rewrite the HTML and CSS codes to simulate features that have not yet been adopted by that version of the browser.
+
+For example, the text-shadow property is not supported in some older versions of Internet Explorer and Firefox but can be simulated using other CSS properties. 
+Using JavaScript, we can replace CSS declarations depending on which browser version a user is using to view the website.
+
+For a more comprehensive solution, we can use tools such as Modernizr or Polyfill.io to automatically identify and provide all of the polyfills that our website might need, 
+ensuring that it can run as smoothly as possible on older browsers.
+
+TLDR: hvis browser ikke er oppdatert kan javascript bli brukt til å simulere den samme funksjonen. Vi bruker verktøy som modernizr eller Polyfill.io til å gjøre dette.
+
+Vi kan legge til dem i headeren av HTML koden som dette : 
+<script src="https://polyfill.io/v3/polyfill.min.js"></script>
