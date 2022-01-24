@@ -1,4 +1,6 @@
-
+:root {
+  --red: #b42e34;
+}
 
 .meny-item{
     display: inline-block;
@@ -131,8 +133,7 @@ button {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: red;
-  border: 1px white;
+  background-color: var(--red);
 }
 
 
@@ -143,11 +144,11 @@ button {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: hsla(0, 0, 0, 0);
+  background-color: transparent;
 }
 
 .dropbtn {
-  background-color: hsla(0, 0, 0, 0);
+  background-color: transparent;
   color: black;
   padding: 16px;
   font-size: 16px;
@@ -193,7 +194,7 @@ button {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-  background-color: red;
+  background-color: #b42e34;
   
 }
 
@@ -206,8 +207,10 @@ button {
   border-color: white;
 }
 
-display: flex;
-justify-content: space-between;
-max-width: 1800px;
-margin-left: auto;
-margin-right: auto;
+.video-header { 
+
+}
+
+.video-header-video {
+
+}
