@@ -1,27 +1,30 @@
 :root {
   --red: #b42e34;
 }
-body{margin: 0;}
-
-.meny-item{
-    display: inline-block;
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.boldie{
+.meny-item {
+  display: inline-block;
+}
+
+.boldie {
   font-size: 16px;
   padding: 16px;
   font-weight: bold;
 }
 
- /* Dropdown Button */
- .dropbtn {
-    background-color: #00000000;
-    color: black;
-    padding: 8px;
-    font-size: 16px;
-    border: none;
-  }
-.dropdown-content a{
+/* Dropdown Button */
+.dropbtn {
+  background-color: #00000000;
+  color: black;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown-content a {
   color: white;
 }
 /* The container <div> - needed to position the dropdown content */
@@ -53,15 +56,15 @@ body{margin: 0;}
 
 /* Change color of dropdown links on hover */
 
-
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
-
-a:link, a:visited {
-  
+a:link,
+a:visited {
   color: black;
   padding: 14px 25px;
   text-decoration: none;
@@ -86,7 +89,8 @@ a:link, a:visited {
 }
 
 .flexbox {
-  display: flexbox;
+  display: flex;
+  flex-basis: 100%;
 }
 .small {
   width: 100px;
@@ -101,9 +105,7 @@ button {
   justify-content: flex-end;
   align-items: left;
   flex-direction: row;
-
 }
-
 
 .container {
   margin-left: auto;
@@ -117,16 +119,13 @@ button {
   justify-content: end;
 }
 
-
-
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 3;
   color: white;
 }
@@ -144,7 +143,6 @@ button {
   background-color: var(--red);
   color: white;
 }
-
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -165,7 +163,7 @@ button {
   cursor: pointer;
 }
 
-.dropbtn a{
+.dropbtn a {
   color: white;
 }
 /* The container <div> - needed to position the dropdown content */
@@ -180,7 +178,7 @@ button {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   justify-content: flex-end;
 }
@@ -197,7 +195,6 @@ button {
 }
 .dropdown-content a:last-child {
   border-width: 0 0 0px 0;
-
 }
 
 /* Change color of dropdown links on hover */
@@ -207,7 +204,6 @@ button {
 .dropdown:hover .dropdown-content {
   display: block;
   background-color: #b42e34;
-  
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -215,7 +211,7 @@ button {
   background-color: hsla(0, 0, 0, 0);
 }
 
-.header-container{
+.header-container {
   padding-top: 0px;
   padding-bottom: 20px;
 }
@@ -224,20 +220,21 @@ button {
   border-color: white;
 }
 
-.video-header { 
+.video-header {
   display: flex;
   box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
   position: relative;
   z-index: 0;
+  height: 400px;
+  max-height: 400px;
 }
 
 .video-header-video {
   bottom: 0;
   left: 0;
   overflow: hidden;
-  position: absolute;
   right: 0;
   top: 0;
   width: auto;
@@ -249,9 +246,15 @@ button {
   box-sizing: border-box;
   max-height: 400px;
   object-fit: cover;
-  filter: brightness(50%);}
+  filter: brightness(50%);
+}
 
-.zover{
+.container-video-text {
+  inset: 0;
+  position: absolute;
+}
+
+.zover {
   z-index: 1;
 }
 
@@ -267,20 +270,18 @@ button {
 }
 
 .red-text {
-  text-shadow:hsla(0, 0, 0, 0);
+  text-shadow: hsla(0, 0, 0, 0);
 }
 
 .white-box {
   background-color: white;
   margin: 20px;
-
 }
 
-.zover a{
+.zover a {
   line-height: 1.5;
   letter-spacing: 0px;
   color: #df2814;
-  font-family: "Source Sans Pro",sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: none;
@@ -292,18 +293,16 @@ button {
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0px;
-  font-family: "Source Sans Pro",sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: none;
-  }
+}
 
 .font-size-small {
   font-size: 0.7em;
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0px;
-  font-family: "Source Sans Pro",sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: none;
@@ -320,11 +319,5 @@ button {
   flex-flow: column;
 }
 
-#logo {
-  background-image: url(images/logo.png);
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 981px;
-  height: 180px;
+.flex-flow-change {
 }
