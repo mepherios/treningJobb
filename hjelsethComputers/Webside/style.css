@@ -85,6 +85,9 @@ a:link, a:visited {
   display: flex;
 }
 
+.flexbox {
+  display: flexbox;
+}
 .small {
   width: 100px;
   padding-inline-start: 30%;
@@ -212,12 +215,17 @@ button {
   background-color: hsla(0, 0, 0, 0);
 }
 
+.header-container{
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
 .dropbtn a {
   border-color: white;
 }
 
 .video-header { 
-  display: grid;
+  display: flex;
   box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
@@ -308,4 +316,15 @@ button {
 
 .center-flex {
   justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#logo {
+  background-image: url(images/logo.png);
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 981px;
+  height: 180px;
 }
