@@ -336,6 +336,9 @@ button {
   .hide-element-list {
     display: none;
   }
+  .position_absolute_image {
+    position: absolute;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -348,12 +351,20 @@ button {
   .checkbox-menu-toggle-off {
     display: none;
   }
+  .menu-icon-hide {
+    display: hidden;
+    opacity: 0;
+  }
+}
+
+.menu-icon-hide2 {
+  opacity: 0;
 }
 
 .checkbox-menu-toggle-off {
   opacity: 0;
 }
-.checkbox-menu-toggle-on:checked + .checkbox-overlay-menu {
+.checkbox-menu-toggle-on:checked + img + .checkbox-overlay-menu {
   display: block;
   position: fixed;
   left: 0;
@@ -366,7 +377,16 @@ button {
   z-index: 5;
 }
 
-.checkbox-menu-toggle-on:checked {
+.checkbox-menu-toggle-off + img {
+  z-index: 10;
+}
+.checkbox-menu-toggle-on:checked,
+.checkbox-menu-toggle-on:checked + img {
+  display: none;
+}
+
+.checkbox-menu-toggle-off:checked,
+.checkbox-menu-toggle-off:checked + img {
   display: none;
 }
 
@@ -374,4 +394,33 @@ button {
   position: relative;
   z-index: 7;
   opacity: 0;
+}
+
+.menu-item-holder {
+  right: 20px;
+  top: 65px;
+}
+.qleft-item {
+  left: 20px;
+}
+
+.checkbox-menu-toggle-on {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  right: 0px;
+  top: 35px;
+}
+
+.checkbox-menu-toggle-off {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0px;
+  top: 35px;
+}
+
+.hidden {
+  display: none;
 }
