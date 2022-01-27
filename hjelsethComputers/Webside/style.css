@@ -237,6 +237,7 @@ button {
   z-index: 0;
   height: 400px;
   max-height: 400px;
+  min-height: 400px;
 }
 
 .video-header-video {
@@ -328,4 +329,48 @@ button {
 }
 
 .flex-flow-change {
+}
+
+@media only screen and (max-width: 1000px) {
+  .hide-element-list {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .checkbox-overlay-menu {
+    display: none;
+  }
+  .checkbox-menu-toggle-on {
+    display: none;
+  }
+  .checkbox-menu-toggle-off {
+    display: none;
+  }
+}
+
+.checkbox-menu-toggle-off {
+  opacity: 0;
+}
+.checkbox-menu-toggle-on:checked + .checkbox-overlay-menu {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(161, 43, 47);
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.checkbox-menu-toggle-on:checked {
+  display: none;
+}
+
+.checkbox-menu-toggle-off {
+  position: relative;
+  z-index: 7;
+  opacity: 0;
 }
