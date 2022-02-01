@@ -25,6 +25,15 @@ body {
   color: hsla(0, 0%, 99%, 0.3);
   color: currentColor;
 }
+
+.img_small2 {
+  width: auto;
+  margin-right: 2m;
+  height: 2em;
+  color: hsla(0, 0%, 99%, 0.3);
+  color: currentColor;
+}
+
 .margin-less {
   margin: 0.5em;
 }
@@ -423,4 +432,88 @@ button {
 
 .hidden {
   display: none;
+}
+
+.flexbox-container {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexbox-container2 {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.flexbox-data {
+  display: flex;
+  flex-flow: column;
+  min-width: 300px;
+  height: clamp(17em, 0.2vw, 0.8em);
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  border: #b42e34;
+  border-style: solid;
+}
+
+.flexbox-data2 {
+  display: flex;
+  flex-flow: column;
+  min-width: 300px;
+  font-size: clamp(2em, 0.2vw, 0.8em);
+  text-align: center;
+  padding: 20px;
+}
+
+.flexbox-data3 {
+  display: flex;
+  flex-flow: column;
+  min-width: auto;
+  height: 200px;
+  height: clamp(17em, 0.2vw, 0.8em);
+  width: auto;
+  background-color: #eeefef;
+  text-align: center;
+  padding: 20px;
+}
+
+.flexbox-data .data-img {
+  align-items: center;
+  text-align: center;
+}
+
+.flexbox-data .data-tittel-text {
+  color: rgb(233, 40, 20);
+  font-size: clamp(0.9em, 0.2vw, 0.8em);
+  align-items: center;
+  text-align: center;
+}
+
+.flexbox-data .data-text {
+  font-size: clamp(0.9em, 0.2vw, 0.8em);
+}
+
+.avdeling-header {
+  display: flex;
+}
+
+.avdeling-header .h1 {
+  align-items: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .flexbox-container {
+    flex-flow: column;
+  }
+  .flexbox-data {
+    padding-bottom: 20px;
+  }
 }
