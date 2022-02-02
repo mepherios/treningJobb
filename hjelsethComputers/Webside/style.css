@@ -482,21 +482,39 @@ button {
 }
 
 .flexbox-data3 {
-  background-color: #eeefef;
   text-align: center;
+  align-items: center;
   padding: 20px;
   width: 250px;
-  height: 250px;
+  height: 50px;
+  margin: 20px;
+  background-color: #eeefef;
   text-align: center;
 }
 
-.flexbox-data3 .a {
+.flexbox-data3 .h2 .a {
   min-width: auto;
   width: auto;
-  background-color: #eeefef;
   text-align: center;
   padding: 20px;
+  margin: 20px;
   width: 250px;
+  height: 50px;
+}
+
+.box-size {
+  height: 50px;
+  width: 250px;
+  align-items: center;
+  text-align: center;
+  font-size: 22px;
+}
+
+.zindex {
+  z-index: 15;
+}
+.a-class-box-size {
+  box-sizing: border-box;
 }
 
 .flexbox-data .data-img {
@@ -530,4 +548,20 @@ button {
   .flexbox-data {
     padding-bottom: 20px;
   }
+}
+
+.kontakt-skjema {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.container-box-kontakt {
+  width: 50%;
+  height: 675px;
+}
+
+.container-venstre-kontakt {
 }
