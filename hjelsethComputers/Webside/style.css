@@ -291,7 +291,26 @@ button {
 .btn-kontakt {
   padding: 20px 80px;
   text-align: center;
-  background-color: #b42e34;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+}
+
+.avdeling-kort-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: 15;
 }
 
 .red-text {
@@ -475,6 +494,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-flow: row;
+  background-color: ;
 }
 
 .flexbox-data {
@@ -492,15 +512,19 @@ button {
 
 .flexbox-data2 {
   min-width: 300px;
-  font-size: clamp(2em, 0.2vw, 0.8em);
+  font-size: clamp(1.5em, 0.2vw, 0.8em);
   padding: 20px;
+  max-width: 1300px;
 }
 
 .flexbox-data3 {
-  padding: 20px;
+  padding: 20px 80px;
+  text-align: center;
+  align-content: center;
+  height: 100px;
   width: 250px;
-  height: 50px;
-  margin: 20px;
+  font-size: 22px;
+  position: relative;
   background-color: #eeefef;
 }
 
@@ -514,7 +538,6 @@ button {
 .box-size {
   height: 50px;
   width: 250px;
-
   font-size: 22px;
 }
 
@@ -539,6 +562,12 @@ button {
 .flexbox-data .data-text {
   font-size: clamp(0.9em, 0.2vw, 0.8em);
   text-align: center;
+}
+
+.flexbox-data3 .data-text3 {
+  font-size: clamp(0.9em, 0.2vw, 0.8em);
+  text-align: center;
+  align-content: center;
 }
 
 .avdeling-header {
