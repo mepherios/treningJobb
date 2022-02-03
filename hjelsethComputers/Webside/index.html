@@ -32,7 +32,7 @@
         <div class="main-block-header-col meny-item inline-flex">
           
           <label class="switch">
-            <input name="checkbox-menu-total" type="radio" class="checkbox-menu-toggle-off"><img src="close-icon.png" class="position_absolute_image menu-icon-hide menu-item-holder left-item">
+            <input name="checkbox-menu-total" type="radio" class="checkbox-menu-toggle-off" checked><img src="close-icon.png" class="position_absolute_image menu-icon-hide menu-item-holder left-item">
           </label>
           
           <label class="switch">
@@ -232,45 +232,44 @@
   
 </div>
 
-<div class="kontakt-skjema">
+<div class="kontakt-skjema-container">
   <div class="container-box-kontakt container-venstre-kontakt">
-    <div class="tittel-skjema">
+    <div class="tittel-skjema container-input-heading container-input-main">
       Kontaktskjema
     </div>
-    <div class="navn">
-      <label for="navn">Navn:</label>
+    <div class="navn flex-input-file container-input-main">
+      <label class="label-padding" for="navn">Navn:</label>
 
-      <input type="string" id="navn" name="navn" 
-       minlength="0" size="10">
+      <input type="text" id="navn" name="navn" 
+       minlength="0" size="10" class="block-element block-element-regular" placeholder="Ditt navn">
 
     </div>
-    <div class="epost-kontakt">
-      <label for="epost-kontakt">E-post:</label>
+    <div class="epost-kontakt flex-input-file container-input-main">
+      <label class="label-padding"  for="epost-kontakt">E-post:</label>
 
       <input type="email" id="epost-kontakt" name="epost-kontakt" required
-       minlength="0" size="10">
+       minlength="0" size="10" class="block-element block-element-regular" placeholder="Din e-postadresse">
 
 
   
     </div>
 
-    <div class="telefon-kontakt">
-      <div class="telefon">
-        <label for="telefon">Telefon</label>
+      <div class="telefon flex-input-file container-input-main">
+        <label class="label-padding" for="telefon">Telefon</label>
   
         <input type="tel" id="telefon" name="telefon"
-         minlength="0" size="10">
+         minlength="0" class="block-element block-element-regular" placeholder="Ditt telefonnummer">
     </div>
 
-    <div class="info-kontakt-skjema label-">
-       <div class="kontakt-skjema">
-        <label class="label_styling" for="kontakt-skjema">Hva kan vi hjelpe deg med?</label>
+       <div class="kontakt-skjema flex-input-file container-input-main">
+        <label class="label-padding"  for="kontakt-skjema">Hva kan vi hjelpe deg med?</label>
   
-        <input class="input-styling-textbox" type="textarea" id="kontakt-skjema" name="kontakt-skjema"
-         minlength="0" >
-        </div>
+        <textarea class="input-styling-textbox block-element" id="kontakt-skjema" name="kontakt-skjema"
+         minlength="0"></textarea>
+
       </div>
-    <div class="send-button">
+      
+    <div class="send-button container-input-bottom container-input-main">
       <div>
         <button class="button-send">Send
 
@@ -278,6 +277,11 @@
       </div>
 
     </div>
+</div>
+
+
+  <div class="container-box-kontakt container-hoyre-kontakt">
+    <img src="bilde-kontakt.png" alt="Mann som jobber med datamaskin" class="image-kontakt">
   </div>
 </div>
 
