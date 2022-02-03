@@ -92,10 +92,11 @@ a:visited {
 
 .button-white {
   padding: 14px 25px;
+  text-align: center;
 }
 
 .header-btn {
-  width: 150px;
+  width: 200px;
 }
 .nav-bar {
   display: flex;
@@ -493,8 +494,7 @@ button {
   padding-right: 20px;
   align-items: center;
   justify-content: center;
-  flex-flow: row;
-  background-color: ;
+  flex-flow: wrap;
 }
 
 .flexbox-data {
@@ -521,18 +521,12 @@ button {
   padding: 20px 80px;
   text-align: center;
   align-content: center;
-  height: 100px;
+  height: 60px;
   width: 250px;
   font-size: 22px;
   position: relative;
   background-color: #eeefef;
-}
-
-.flexbox-data3 .h2 .a {
-  padding: 20px;
-  margin: 20px;
-  width: 250px;
-  height: 50px;
+  margin: 30px;
 }
 
 .box-size {
@@ -568,6 +562,11 @@ button {
   font-size: clamp(0.9em, 0.2vw, 0.8em);
   text-align: center;
   align-content: center;
+  width: 250px;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
 }
 
 .avdeling-header {
