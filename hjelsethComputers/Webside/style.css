@@ -735,15 +735,56 @@ textarea {
 }
 
 .employee {
-  height: 200px;
-  width: 400px;
+  height: 450px;
+  width: 320px;
 }
 
 .flex-container {
-  display: flex;
 }
 
 .radio-header-show-menu {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.ikoner {
+  display: inline;
+}
+
+.employee-position {
+  font-weight: 800;
+  font-size: 14pt;
+  margin-top: 10px;
+}
+
+.employee-name {
+  grid-area: name;
+  margin: 0;
+}
+
+.employees .employee h3.employee-name {
+  font-weight: 800;
+  font-size: 14pt;
+  margin-top: 10px;
+}
+
+.employee-name {
+  grid-area: name;
+  margin: 0;
+  color: var(--red);
+  font-size: 22px;
+}
+
+.red {
+  color: var(--red);
+}
+
+.employee-container-parent {
+}
+
+.employee-container {
+  width: 100%;
+  display: inline-flex;
+  flex-flow: wrap;
+  justify-content: center;
 }

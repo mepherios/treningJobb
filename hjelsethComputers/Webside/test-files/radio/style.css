@@ -6,3 +6,9 @@ label {
 input {
   margin: 0.4rem;
 }
+
+.employee-container {
+  display: flex;
+  align-content: center;
+  flex-flow: wrap;
+}
