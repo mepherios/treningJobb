@@ -733,3 +733,17 @@ textarea {
   display: block;
   padding-bottom: 15px;
 }
+
+.employee {
+  height: 200px;
+  width: 400px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.radio-header-show-menu {
+  padding-left: 20px;
+  padding-right: 20px;
+}
