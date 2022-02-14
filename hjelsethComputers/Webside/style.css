@@ -791,3 +791,14 @@ textarea {
   background-color: #e8e8e8;
   width: 100%;
 }
+
+.radio-label {
+}
+
+.radio-on-button {
+  display: none;
+}
+
+.radio-off-button:checked {
+  display: block;
+}
