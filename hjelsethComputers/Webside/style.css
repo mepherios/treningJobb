@@ -735,11 +735,12 @@ textarea {
 }
 
 .employee {
-  height: 450px;
-  width: 320px;
+  min-height: 450px;
+  min-width: 320px;
 }
 
 .flex-container {
+  display: flex;
 }
 
 .radio-header-show-menu {
@@ -755,21 +756,10 @@ textarea {
   font-weight: 800;
   font-size: 14pt;
   margin-top: 10px;
+  color: black;
 }
 
 .employee-name {
-  grid-area: name;
-  margin: 0;
-}
-
-.employees .employee h3.employee-name {
-  font-weight: 800;
-  font-size: 14pt;
-  margin-top: 10px;
-}
-
-.employee-name {
-  grid-area: name;
   margin: 0;
   color: var(--red);
   font-size: 22px;
@@ -784,7 +774,7 @@ textarea {
 
 .employee-container {
   width: 100%;
-  display: inline-flex;
+  display: flex;
   flex-flow: wrap;
   justify-content: center;
 }
