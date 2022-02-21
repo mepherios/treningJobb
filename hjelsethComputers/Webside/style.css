@@ -795,10 +795,37 @@ textarea {
 .radio-label {
 }
 
-.radio-on-button {
+.radio-on-button:checked {
   display: none;
 }
 
-.radio-off-button:checked {
+.radio-off-button:checked + .radio-header-show-menu {
+  display: none;
+}
+
+.kontakt-boks-container-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.kontakt-kort-container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.gjem {
+  display: none;
+}
+
+.linklist {
+  color: black;
+}
+
+.linklist:visited {
+  color: black;
+}
+
+.block {
   display: block;
 }
