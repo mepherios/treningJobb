@@ -807,11 +807,14 @@ textarea {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .kontakt-kort-container-flex {
   display: flex;
   flex-direction: column;
+  width: 290px;
+  height: 308px;
 }
 
 .gjem {
@@ -828,4 +831,35 @@ textarea {
 
 .block {
   display: block;
+}
+
+#ul + .menu-footermeny {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 8px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.fl-heading {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+ul.menu-footermeny {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.colored-line {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--red);
 }
