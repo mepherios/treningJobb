@@ -808,13 +808,17 @@ textarea {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  height: 300px;
 }
 
 .kontakt-kort-container-flex {
   display: flex;
   flex-direction: column;
-  width: 290px;
-  height: 308px;
+  width: 220px;
+  height: auto;
+  border-top: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
+  justify-content: center;
 }
 
 .gjem {
@@ -840,6 +844,7 @@ textarea {
   padding-bottom: 8px;
   text-align: left;
   list-style-type: none;
+  font-size: 18px;
 }
 
 .fl-heading {
@@ -857,9 +862,58 @@ ul.menu-footermeny {
   padding-bottom: 8px;
   font-size: 14px;
 }
+.menu-footermeny {
+  height: 100px;
+}
 
 .colored-line {
+  margin-top: 18px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-top: 2px;
   padding-left: 20px;
   padding-right: 20px;
-  color: var(--red);
+  background-color: var(--red);
+  height: 1px;
+}
+
+.colored-line2 {
+  margin-top: 18px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-top: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--red);
+  height: 1px;
+}
+
+.add-height {
+  height: 40px;
+  opacity: 0;
+}
+
+.tittel-kontakt-kort {
+  height: auto;
+}
+
+.addheight {
+  height: 20px;
+}
+
+.menu-footermeny li {
+  margin-bottom: 8px;
+}
+
+.partner-ikoner {
+  height: 200px;
+}
+
+.trial:hover {
+  filter: invert(27%) sepia(46%) saturate(2925%) hue-rotate(334deg)
+    brightness(82%) contrast(94%);
+}
+
+.ikoner-venstre {
+  position: relative;
 }
