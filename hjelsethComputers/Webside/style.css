@@ -1,6 +1,7 @@
 :root {
   --red: #b42e34;
   --max-width-container: 1530px;
+  --redStrong: #df2814;
 }
 *,
 ::after,
@@ -736,36 +737,45 @@ textarea {
 
 .employee {
   min-height: 450px;
-  min-width: 320px;
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .flex-container {
   display: flex;
 }
-
-.radio-header-show-menu {
-  padding-left: 20px;
-  padding-right: 20px;
+.employee-image {
+  width: 100%;
+  height: auto;
 }
+
 .ikoner {
   display: inline;
 }
 
 .employee-position {
   font-weight: 800;
-  font-size: 14pt;
-  margin-top: 10px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 0px;
+  padding-bottom: 12px;
   color: black;
 }
 
 .employee-name {
   margin: 0;
-  color: var(--red);
-  font-size: 22px;
+  color: var(--redStrong);
+  font-size: 14pt;
+  padding-top: 10px;
+  font-weight: 800;
 }
 
 .red {
-  color: var(--red);
+  color: var(--redStrong);
 }
 
 .employee-container-parent {
@@ -776,8 +786,9 @@ textarea {
   width: 100%;
   display: flex;
   flex-flow: wrap;
-  justify-content: center;
   background-color: #eeefef;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .padding-container {
@@ -787,7 +798,7 @@ textarea {
 }
 
 .radio-container {
-  height: 150px;
+  height: auto;
   background-color: #e8e8e8;
   width: 100%;
 }
@@ -949,4 +960,28 @@ ul.menu-footermeny {
   right: 0;
   bottom: 0;
   z-index: 20;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.complete-container {
+  width: 100%;
+  height: 100%;
+}
+
+.minRadio {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  display: block;
 }

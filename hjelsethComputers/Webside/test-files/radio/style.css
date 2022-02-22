@@ -12,3 +12,11 @@ input {
   align-content: center;
   flex-flow: wrap;
 }
+
+:checked {
+  background-color: red;
+}
+
+:checked + label {
+  display: none;
+}
