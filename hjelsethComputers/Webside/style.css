@@ -985,3 +985,12 @@ ul.menu-footermeny {
   background-color: aliceblue;
   display: block;
 }
+
+
+/* 
+Gjøremål for i morgen: Fikse radio-knapp med hidden. Bytte ut 25% til 33 % osv basert på skjermstørrelse i .employee {
+Fikse siste meny for flexbox-settings gitt skjermstørrelse
+Fikse bunn-ikoner basert på skjermstørrelse
+Legge til mobil-meny for kontakt i overlay i mobil-menyen.
+Fjerne gå til topp-knappen i mobil-menyen.
+/*
