@@ -906,7 +906,9 @@ ul.menu-footermeny {
 }
 
 .partner-ikoner {
+  display: flex;
   height: 200px;
+  align-items: center;
 }
 
 .trial:hover {
@@ -916,4 +918,29 @@ ul.menu-footermeny {
 
 .ikoner-venstre {
   position: relative;
+  width: 1000px;
+}
+
+.personerklering {
+  color: #d1d1d1;
+  background-color: black;
+  text-align: center;
+  height: 50px;
+  background: black;
+  font-size: 14px;
+}
+
+.personerklering a {
+  color: #d1d1d1;
+}
+
+.personerklering a:visited {
+  color: #d1d1d1;
+}
+
+.returnButton {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
 }
