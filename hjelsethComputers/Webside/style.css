@@ -928,14 +928,20 @@ ul.menu-footermeny {
   height: 50px;
   background: black;
   font-size: 14px;
+  padding-top: 10px;
+  height: 80px;
 }
 
 .personerklering a {
   color: #d1d1d1;
+  padding-top: 20px;
+  height: 80px;
 }
 
 .personerklering a:visited {
   color: #d1d1d1;
+  padding-top: 20px;
+  height: 80px;
 }
 
 .returnButton {
