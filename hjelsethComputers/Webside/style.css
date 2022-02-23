@@ -532,12 +532,27 @@ button {
   width: 300px;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
-  border: #b42e34;
+  border: 1px var(--redStrong);
   border-style: solid;
   position: relative;
   height: 200px;
   margin: 20px;
 }
+
+@media only screen and (max-width: 1400px){
+  .flexbox-data {
+    width: 40%;
+
+  }
+}
+
+
+@media only screen and (min-width: 1400px){
+  .flexbox-data {
+    width: 20%;
+  }
+}
+
 
 .flexbox-data2 {
   min-width: 300px;
@@ -576,8 +591,12 @@ button {
   text-align: center;
 }
 
+.data-text{
+  color: #3a3a3a;
+}
+
 .flexbox-data .data-tittel-text {
-  color: rgb(233, 40, 20);
+  color: var(--redStrong);
   font-size: clamp(0.9em, 0.2vw, 0.8em);
   text-align: center;
 }
@@ -585,6 +604,7 @@ button {
 .flexbox-data .data-text {
   font-size: clamp(0.9em, 0.2vw, 0.8em);
   text-align: center;
+  margin-top: 20px;
 }
 
 .flexbox-data3 .data-text3 {
