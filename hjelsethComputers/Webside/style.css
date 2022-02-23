@@ -24,6 +24,10 @@ body {
   display: inline-block;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .img_small {
   width: auto;
   margin-right: 1em;
@@ -405,7 +409,6 @@ button {
   opacity: 0;
 }
 .checkbox-menu-toggle-on:checked + img + .checkbox-overlay-menu {
-  display: block;
   position: fixed;
   left: 0;
   top: 0;
@@ -415,12 +418,33 @@ button {
   width: 100%;
   height: 100%;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-overlay-menu{
+  display: none;
+}
+
+.checkbox-menu-toggle-on:checked + .checkbox-overlay-menu {
+  display: block;
 }
 
 .mobile-menu-header {
   text-align: center;
+  list-style: none;
+  font-size: xxx-large;
+
 }
 
+.mobile-menu-header li{
+  margin: 20px;
+}
+
+.mobile-menu-header a, .mobile-menu-header a:visited {
+  color: white;
+}
 .checkbox-menu-toggle-off + img {
   z-index: 10;
 }
@@ -989,7 +1013,7 @@ ul.menu-footermeny {
   position: fixed;
   right: 20px;
   bottom: 16px;
-  z-index: 20;
+  z-index: 0;
 }
 
 .center-container {
