@@ -535,7 +535,7 @@ button {
   border: 1px var(--redStrong);
   border-style: solid;
   position: relative;
-  height: 200px;
+  
   margin: 20px;
 }
 
@@ -597,18 +597,19 @@ button {
 
 .flexbox-data .data-tittel-text {
   color: var(--redStrong);
-  font-size: clamp(0.9em, 0.2vw, 0.8em);
+  font-size: clamp(1.1em, 0.3vw, 0.8em);
   text-align: center;
+  padding-top: 5px;
 }
 
 .flexbox-data .data-text {
-  font-size: clamp(0.9em, 0.2vw, 0.8em);
+  font-size: clamp(1.1em, 0.2vw, 0.8em);
   text-align: center;
   margin-top: 20px;
 }
 
 .flexbox-data3 .data-text3 {
-  font-size: clamp(0.9em, 0.2vw, 0.8em);
+  font-size: clamp(1.1em, 0.2vw, 0.8em);
   text-align: center;
   align-content: center;
   width: 250px;
