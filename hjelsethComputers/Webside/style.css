@@ -417,6 +417,10 @@ button {
   z-index: 5;
 }
 
+.mobile-menu-header {
+  text-align: center;
+}
+
 .checkbox-menu-toggle-off + img {
   z-index: 10;
 }
@@ -810,23 +814,54 @@ textarea {
   display: none;
 }
 
+.red-border-container {
+  border-top: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
+}
+
 .kontakt-boks-container-flex {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  height: 300px;
+  height: auto;
+  flex-direction: row;
 }
 
 .kontakt-kort-container-flex {
   display: flex;
   flex-direction: column;
   width: 220px;
-  height: auto;
-  border-top: 2px solid var(--red);
-  border-bottom: 2px solid var(--red);
+  height: 280px;
   justify-content: center;
 }
+
+
+@media only screen and (min-width: 1200px){
+  .kontakt-boks-container-flex {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .kontakt-boks-container-flex {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .mobile-meny-hide{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1000px){
+  .container-box-kontakt {
+    width: 100%;
+  }
+}
+
 
 .gjem {
   display: none;
@@ -925,7 +960,6 @@ ul.menu-footermeny {
 
 .ikoner-venstre {
   position: relative;
-  width: 1000px;
 }
 
 .personerklering {
@@ -953,8 +987,8 @@ ul.menu-footermeny {
 
 .returnButton {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  right: 20px;
+  bottom: 16px;
   z-index: 20;
 }
 
