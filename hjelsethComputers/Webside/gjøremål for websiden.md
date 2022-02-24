@@ -1,0 +1,15 @@
+Her er noen umiddelbare ting du kan se litt på:
+
+Font-størrelser
+
+Farger på fonter
+
+Farger ved mouse-over (hover) på lenker, meny etc.
+
+Bakgrunn ved kontaktskjema (dotter)
+
+Se våre ansatte (virker veldig halvferdig)
+
+Mobilsiden er ikke i nærhten av mobilsiden til hjelseth.com, her gjenstår en del jobb. Sjekk selv siden på en mobiltelefon.
+
+Dette må gjøres før du begynner på javascript. Spørr evt. Bjørnar om hjelp, dersom han har anledning.
