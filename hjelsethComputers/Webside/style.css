@@ -18,7 +18,7 @@ hr {
 
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .meny-item {
@@ -552,10 +552,40 @@ button {
 
 .flexbox-data2 {
   min-width: 300px;
-  font-size: clamp(1.5em, 0.2vw, 0.8em);
-  padding: 20px;
   max-width: 1300px;
 }
+.flexbox-data2 h1 {
+  justify-content: center;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  color: #df2814;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.flexbox-data2 p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #3a3a3a;
+    font-family: "Source Sans Pro",sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    font-style: normal;
+    font-size: 1.1em;
+    text-align: center;
+    color: #3a3a3a;
+    margin-bottom: 28px;
+}
+
 
 .flexbox-data3 {
   padding: 20px 80px;
@@ -605,7 +635,8 @@ button {
 }
 
 .flexbox-data3 .data-text3 {
-  font-size: clamp(1.1em, 0.2vw, 0.8em);
+  font-size: clamp(0.8em, 0.2vw, 0.8em);
+  font-weight: bold;
   text-align: center;
   align-content: center;
   width: 250px;
@@ -705,6 +736,10 @@ button {
   font-size: 16px;
 }
 
+.button-send:hover {
+  cursor: pointer;
+}
+
 .button-send2 {
   background-color: #333333;
 }
@@ -736,13 +771,13 @@ button {
   z-index: 15;
 }
 
-input[type='email'] {
+input[type="email"] {
 }
 
-input[type='email'] {
+input[type="email"] {
 }
 
-input[type='email'] {
+input[type="email"] {
 }
 
 textarea {
@@ -1139,4 +1174,22 @@ button .dropbtn a:hover {
 
 .dropbtn:hover {
   color: var(--redStrong);
+}
+
+.background-image-boks {
+  width: 100%;
+  position: relative;
+}
+
+.background-image-boks::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("https://www.hjelseth.com/wp-content/uploads/2021/09/bakground-02.svg");
+  opacity: 0.02;
+  z-index: -1;
 }
