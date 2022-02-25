@@ -1022,6 +1022,7 @@ ul.menu-footermeny {
 
 .ikoner-venstre {
   position: relative;
+  width: 20%;
 }
 
 .personerklering {
@@ -1190,4 +1191,16 @@ button .dropbtn a:hover {
   background-image: url("https://www.hjelseth.com/wp-content/uploads/2021/09/bakground-02.svg");
   opacity: 0.02;
   z-index: -1;
+}
+
+.ikoner-start{
+  width: 20%;
+}
+
+.ikoner-senter {
+  width: 40%;
+}
+
+.ikoner-hoyre {
+  width: 20%;
 }
