@@ -4,7 +4,7 @@ Font-størrelser
 
 Farger på fonter
 
-Farger ved mouse-over (hover) på lenker, meny etc.
+Farger ved mouse-over (hover) på lenker, meny etc. Gjort.
 
 Bakgrunn ved kontaktskjema (dotter)
 

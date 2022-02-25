@@ -2,6 +2,7 @@
   --red: #b42e34;
   --max-width-container: 1530px;
   --redStrong: #df2814;
+  --greyBack: #e8e8e8;
 }
 *,
 ::after,
@@ -17,7 +18,7 @@ hr {
 
 body {
   margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .meny-item {
@@ -421,7 +422,7 @@ button {
   justify-content: center;
 }
 
-.checkbox-overlay-menu{
+.checkbox-overlay-menu {
   display: none;
 }
 
@@ -433,14 +434,14 @@ button {
   text-align: center;
   list-style: none;
   font-size: xxx-large;
-
 }
 
-.mobile-menu-header li{
+.mobile-menu-header li {
   margin: 20px;
 }
 
-.mobile-menu-header a, .mobile-menu-header a:visited {
+.mobile-menu-header a,
+.mobile-menu-header a:visited {
   color: white;
 }
 .checkbox-menu-toggle-off + img {
@@ -533,24 +534,21 @@ button {
   border: 1px var(--redStrong);
   border-style: solid;
   position: relative;
-  
+
   margin: 20px;
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1400px) {
   .flexbox-data {
     width: 40%;
-
   }
 }
 
-
-@media only screen and (min-width: 1400px){
+@media only screen and (min-width: 1400px) {
   .flexbox-data {
     width: 20%;
   }
 }
-
 
 .flexbox-data2 {
   min-width: 300px;
@@ -589,7 +587,7 @@ button {
   text-align: center;
 }
 
-.data-text{
+.data-text {
   color: #3a3a3a;
 }
 
@@ -738,13 +736,13 @@ button {
   z-index: 15;
 }
 
-input[type="email"] {
+input[type='email'] {
 }
 
-input[type="email"] {
+input[type='email'] {
 }
 
-input[type="email"] {
+input[type='email'] {
 }
 
 textarea {
@@ -781,8 +779,6 @@ textarea {
   display: block;
   padding-bottom: 15px;
 }
-
-
 
 .flex-container {
   display: flex;
@@ -878,44 +874,33 @@ textarea {
   justify-content: center;
 }
 
-
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
   .kontakt-boks-container-flex {
     flex-direction: row;
   }
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
   .kontakt-boks-container-flex {
     flex-direction: column;
     align-content: center;
   }
 }
 
-@media only screen and (max-width: 1000px){
-  .mobile-meny-hide{
+@media only screen and (max-width: 1000px) {
+  .mobile-meny-hide {
     display: none;
   }
 }
 
-
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
   .container-box-kontakt {
     width: 100%;
   }
 }
 
-
 .gjem {
   display: none;
-}
-
-.linklist {
-  color: black;
-}
-
-.linklist:visited {
-  color: black;
 }
 
 .block {
@@ -1077,7 +1062,6 @@ Media query for employee
 }
 
 @media only screen and (min-width: 800px) {
-
   .employee {
     min-height: 450px;
     flex: 0 0 25%;
@@ -1087,19 +1071,20 @@ Media query for employee
   }
 }
 
-.open-container{
+.open-container {
   display: block;
 }
 
-.radioOn{}
-
+.radioOn {
+}
 
 .radioOff:checked + .open-container {
   display: none;
   background-color: red;
 }
 
-.radioOff{}
+.radioOff {
+}
 
 /*
 
@@ -1112,3 +1097,46 @@ Fikse bunn-ikoner basert på skjermstørrelse
 Legge til mobil-meny for kontakt i overlay i mobil-menyen.
 Fjerne gå til topp-knappen i mobil-menyen.
 /*
+*/
+
+.hover-red:hover {
+  background-color: var(--redStrong);
+  color: white;
+}
+
+.zover a:hover {
+  background-color: var(--redStrong);
+  color: white;
+}
+
+.flexbox-data:hover {
+  background-color: var(--greyBack);
+}
+
+.flexbox-data3:hover {
+  background-color: var(--redStrong);
+}
+
+.button-send:hover {
+  background-color: black;
+}
+
+li a:hover {
+  color: var(--redStrong);
+}
+
+li a:hover {
+  color: var(--redStrong);
+}
+
+li .linklist a:hover {
+  color: var(--redStrong);
+}
+
+button .dropbtn a:hover {
+  color: var(--redStrong);
+}
+
+.dropbtn:hover {
+  color: var(--redStrong);
+}
