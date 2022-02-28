@@ -829,20 +829,27 @@ textarea {
 .employee-position {
   font-weight: 800;
   font-size: 16px;
-  margin: 0;
   padding: 0;
-
-  margin-top: 0px;
+  margin: 0 0 10px;
   padding-bottom: 12px;
-  color: black;
+  color: #3a3a3a;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.55;
+  font-style: normal;
 }
 
 .employee-name {
   margin: 0;
   color: var(--redStrong);
-  font-size: 14pt;
-  padding-top: 10px;
   font-weight: 800;
+  font-size: 14pt;
+  margin-top: 10px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  color: #df2814;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: none;
+  font-style: normal;
 }
 
 .red {
@@ -858,8 +865,8 @@ textarea {
   display: flex;
   flex-flow: wrap;
   background-color: #eeefef;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .padding-container {
@@ -1093,6 +1100,7 @@ Media query for employee
     max-width: 50%;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: left;
   }
 }
 
@@ -1103,6 +1111,7 @@ Media query for employee
     max-width: 25%;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: left;
   }
 }
 
@@ -1118,7 +1127,8 @@ Media query for employee
   background-color: red;
 }
 
-.radioOff {
+.radioOff:checked + .radio-label {
+  display: none;
 }
 
 /*
@@ -1193,7 +1203,7 @@ button .dropbtn a:hover {
   z-index: -1;
 }
 
-.ikoner-start{
+.ikoner-start {
   width: 20%;
 }
 
@@ -1203,4 +1213,127 @@ button .dropbtn a:hover {
 
 .ikoner-hoyre {
   width: 20%;
+}
+
+.seVareAnsatte {
+  background-color: rgb(232 232 232);
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  color: #757575;
+  text-transform: none;
+  vertical-align: middle;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.seVareAnsatteText {
+  font-size: 28px;
+}
+
+.seVareAnsatte:hover {
+  color: var(--red);
+  width: 100%;
+}
+
+.ansatte-gruppe {
+  display: flex;
+}
+
+.arbeids-gruppe {
+  display: block;
+  width: 20%;
+}
+
+.flex-container-avdeling {
+  background-color: #eeefef;
+}
+
+.flex-container-avdeling {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  height: 200px;
+  align-items: center;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.radio-off-button:checked {
+  display: none;
+}
+
+.avdelingstekst:hover {
+  color: #df2814;
+}
+.avdelingstekst {
+  font-weight: 500;
+  display: inline-table;
+  vertical-align: middle;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+}
+
+.avdelingstekstSelected {
+  color: #df2814;
+}
+
+.avdeling-container {
+  width: 20%;
+}
+.flex-container-avdeling::before {
+}
+
+.flex-container-avdeling::after {
+}
+
+.flex-container-avdeling {
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.tittelAvdeling {
+  width: 100%;
+  height: 50px;
+  text-align-last: left;
+  padding-left: 10px;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  color: #df2814;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.email-kontakt {
+  font-size: 13pt;
+  padding: 0;
+  margin-top: 0;
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 1.55;
+  font-style: normal;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.telefon-nummer {
+  padding: 0;
+  margin-top: 0;
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 1.55;
+  font-style: normal;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.employee-icons {
+  max-width: 100%;
+  position: absolute;
+  height: 48px;
+}
+
+.icon-card {
+  padding-left: 24px;
+  height: 24px;
 }
