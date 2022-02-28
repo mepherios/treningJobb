@@ -890,6 +890,8 @@ textarea {
   text-align: center;
 }
 
+.radio-on-button {}
+
 .radio-off-button:checked + .radio-header-show-menu {
   display: none;
 }
@@ -1227,6 +1229,25 @@ button .dropbtn a:hover {
   padding-bottom: 30px;
 }
 
+.seArbeidsGrupper {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  color: #757575;
+  text-transform: none;
+  vertical-align: middle;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+}
+
+.seVareAnsatte:hover {
+  cursor: pointer;
+}
+.seArbeidsGrupper:hover {
+  color: var(--redStrong)
+}
+
 .seVareAnsatteText {
   font-size: 28px;
 }
@@ -1341,4 +1362,9 @@ button .dropbtn a:hover {
 
 .maxwidth {
   width: 100%;
+}
+
+.maxwidth:hover{
+  color: var(--red);
+  cursor: pointer;
 }
