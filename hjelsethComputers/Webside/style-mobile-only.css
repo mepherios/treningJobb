@@ -1,0 +1,1400 @@
+:root {
+  --red: #b42e34;
+  --max-width-container: 1530px;
+  --redStrong: #df2814;
+  --greyBack: #e8e8e8;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+hr {
+  margin: 0;
+  margin-bottom: 0.7em;
+  color: hsla(0, 0%, 99%, 0.3);
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.meny-item {
+  display: inline-block;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.img_small {
+  width: auto;
+  margin-right: 1em;
+  height: 1em;
+  color: hsla(0, 0%, 99%, 0.3);
+  color: currentColor;
+}
+
+.img_small2 {
+  width: auto;
+  margin-right: 2m;
+  height: 5em;
+  color: hsla(0, 0%, 99%, 0.3);
+  color: currentColor;
+}
+
+.margin-less {
+  margin: 0.5em;
+}
+
+.boldie {
+  font-size: 16px;
+  padding: 16px;
+  font-weight: bold;
+}
+
+.grey-link,
+.grey-link:visited {
+  color: hsl(0, 0%, 40%);
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: hsla(0, 0, 0, 0);
+  min-width: 160px;
+  width: 250px;
+  z-index: 3;
+  overflow: visible;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  display: block;
+}
+
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.padding {
+  padding: 0 25px;
+}
+
+.button-white {
+  padding: 14px 25px;
+  text-align: center;
+}
+
+.header-btn {
+  font-size: 5vw;
+
+}
+
+.button-style {
+  width: 80%;
+  height: 40%;
+  margin: 5%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--max-width-container);
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexbox {
+  display: flex;
+  flex-basis: 100%;
+}
+.small {
+  width: 85px;
+  padding-inline-start: -20%;
+}
+
+button {
+  overflow: visible;
+}
+
+.main-block-header-col {
+  justify-content: flex-end;
+  align-items: left;
+  flex-direction: row;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width-container);
+}
+
+.center-left {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.colum-row {
+  flex-direction: row;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  color: white;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  border-width: 0 0 1px 0;
+  border-color: white;
+  border-style: solid;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--red);
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn a {
+  color: white;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  justify-content: flex-end;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a:last-child {
+  border-width: 0 0 0px 0;
+}
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #b42e34;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: hsla(0, 0, 0, 0);
+}
+
+.header-container {
+  padding-top: 0px;
+  padding-bottom: 0.5em;
+}
+
+.dropbtn a {
+  border-color: white;
+}
+
+.video-header {
+  display: flex;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  z-index: 0;
+  height: 100%
+}
+
+.video-header-video {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+  width: auto;
+  max-width: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  box-sizing: border-box;
+  height: 1305px;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.container-video-text {
+  inset: 0;
+  position: absolute;
+}
+
+.zover {
+  z-index: 1;
+}
+
+.white-text {
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-kontakt {
+  padding: 20px 80px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+}
+
+.avdeling-kort-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: 15;
+}
+
+
+
+.red-text {
+  text-shadow: hsla(0, 0, 0, 0);
+}
+
+.white-box {
+  background-color: white;
+}
+
+.zover a {
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #df2814;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: none;
+  text-shadow: 0;
+}
+
+.font-size-large {
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: none;
+  font-size: clamp(4em,8vw,1.2em)
+}
+
+.font-size-small {
+  font-size: clamp(0.9em, 0.1vw, 0.8em);
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: none;
+}
+
+.video-header-container{
+  height: 1305px;
+}
+
+.container-box {
+  height: auto;
+  width: 90%;
+}
+
+.center-flex {
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.flex-flow-change {
+}
+
+@media only screen and (max-width: 1000px) {
+  .hide-element-list {
+    display: none;
+  }
+  .position_absolute_image {
+    position: absolute;
+  }
+}
+
+.avdeling-kort-container {
+  display: flex;
+}
+
+@media only screen and (min-width: 1000px) {
+  .checkbox-overlay-menu {
+    display: none;
+  }
+  .checkbox-menu-toggle-on {
+    display: none;
+  }
+  .checkbox-menu-toggle-off {
+    display: none;
+  }
+  .menu-icon-hide {
+    display: hidden;
+    opacity: 0;
+  }
+}
+
+.menu-icon-hide2 {
+  opacity: 0;
+}
+
+.checkbox-menu-toggle-off {
+  opacity: 0;
+}
+.checkbox-menu-toggle-on:checked + img + .checkbox-overlay-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(161, 43, 47);
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-overlay-menu {
+  display: none;
+}
+
+.checkbox-menu-toggle-on:checked + .checkbox-overlay-menu {
+  display: block;
+}
+
+.mobile-menu-header {
+  text-align: inherit;
+  list-style: none;
+  font-size: 5vw;
+  font-weight: 700;
+  margin-left: 10%;
+  margin-right: auto;
+
+}
+
+.mobile-menu-header li {
+  margin: 20%;
+}
+
+.mobile-menu-header a,
+.mobile-menu-header a:visited {
+  color: white;
+}
+.checkbox-menu-toggle-off + img {
+  z-index: 10;
+}
+.checkbox-menu-toggle-on:checked,
+.checkbox-menu-toggle-on:checked + img {
+  display: none;
+}
+
+.checkbox-menu-toggle-off:checked,
+.checkbox-menu-toggle-off:checked + img {
+  display: none;
+}
+
+.checkbox-menu-toggle-off {
+  position: relative;
+  z-index: 7;
+  opacity: 0;
+}
+
+.menu-item-holder {
+  right: 20px;
+  top: 65px;
+}
+.qleft-item {
+  left: 20px;
+}
+
+.checkbox-menu-toggle-on {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  right: 0px;
+  top: 35px;
+}
+
+.checkbox-menu-toggle-off {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0px;
+  top: 35px;
+}
+
+.hidden {
+  display: none;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1405px) and (min-width: 1300px) {
+  .flexbox-container {
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1100px) {
+  .flexbox-container {
+  }
+}
+
+.flexbox-container2 {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.flexbox-container3 {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.avdeling-header h1 {
+  justify-content: center;
+  text-align: center;
+  color: rgb(233, 40, 20);
+  font-size: 8vw;
+  padding: 5%;
+}
+
+
+.flexbox-data {
+  display: flex;
+  flex-flow: column;
+  min-width: 300px;
+  /* height: clamp(26em, 34.2vw, 0.8em); */
+  /* width: 300px; */
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5%;
+  border: 1px var(--redStrong);
+  border-style: solid;
+  position: relative;
+  margin: 20px;
+  height: 40vw;
+  margin: 5%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .flexbox-data {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .flexbox-data {
+    width: 20%;
+  }
+}
+
+.flexbox-data2 {
+  min-width: 300px;
+  max-width: 1300px;
+}
+.flexbox-data2 h1 {
+  justify-content: center;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  color: #df2814;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.flexbox-data2 p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #3a3a3a;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.55;
+  font-style: normal;
+  font-size: 1.1em;
+  text-align: center;
+  color: #3a3a3a;
+  margin-bottom: 28px;
+}
+
+.flexbox-data3 {
+  padding: 20px 80px;
+  text-align: center;
+  align-content: center;
+  height: 60px;
+  width: 250px;
+  font-size: 22px;
+  position: relative;
+  background-color: #eeefef;
+  margin: 30px;
+}
+
+.box-size {
+  height: 50px;
+  width: 250px;
+  font-size: 22px;
+}
+
+.zindex {
+  z-index: 15;
+}
+.a-class-box-size {
+  box-sizing: border-box;
+}
+
+.flexbox-data .data-img {
+  align-items: center;
+  text-align: center;
+}
+
+.data-text {
+  color: #3a3a3a;
+}
+
+.flexbox-data .data-tittel-text {
+  color: var(--redStrong);
+  font-size: clamp(1.1em, 0.3vw, 0.8em);
+  text-align: center;
+  padding-top: 5px;
+}
+
+.flexbox-data .data-text {
+  font-size: clamp(1.1em, 0.2vw, 0.8em);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.flexbox-data3 .data-text3 {
+  font-size: clamp(0.8em, 0.2vw, 0.8em);
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+  width: 250px;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+}
+
+.avdeling-header {
+  display: flex;
+}
+
+.avdeling-header .h1 {
+  align-items: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .flexbox-container {
+  }
+  .flexbox-data {
+    padding-bottom: 20px;
+  }
+}
+
+.kontakt-skjema-container {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-flow: wrap-reverse;
+  height: 100%;
+}
+
+.container-box-kontakt {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.venstre-skjema-cramp {
+  width: 50%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.flex-input-file {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.block-element {
+  display: block;
+  width: 100%;
+}
+
+.block-element-regular {
+  border: hidden;
+  height: 30px;
+}
+.tittel-skjema {
+  margin-bottom: 20px;
+}
+
+.kontakt-skjema {
+}
+
+.container-venstre-kontakt {
+  background-color: #eeefef;
+}
+
+.container-hoyre-kontakt {
+  position: relative;
+}
+
+.image-kontakt {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button-send {
+  background-color: #333333;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button-send:hover {
+  cursor: pointer;
+}
+
+.button-send2 {
+  background-color: #333333;
+}
+
+.input-styling-textbox {
+  text-align: start;
+  align-content: start;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.label_styling {
+}
+
+.label-style-box {
+}
+
+.avdeling-kort-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: 15;
+}
+
+input[type="email"] {
+}
+
+input[type="email"] {
+}
+
+input[type="email"] {
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.container-input-heading {
+  color: #df2814;
+  padding-top: 100px;
+  font-size: 24px;
+}
+
+.container-input-main {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.container-input-bottom {
+  padding-bottom: 100px;
+}
+
+.label-padding {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.flex-container {
+  display: flex;
+}
+.employee-image {
+  width: 100%;
+  height: auto;
+}
+
+.ikoner {
+  display: inline;
+}
+
+.employee-position {
+  font-weight: 800;
+  font-size: 16px;
+  padding: 0;
+  margin: 0 0 37px;
+  padding-bottom: 12px;
+  color: #3a3a3a;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.55;
+  font-style: normal;
+}
+
+.employee-name {
+  margin: 0;
+  color: var(--redStrong);
+  font-weight: 800;
+  font-size: 14pt;
+  margin-top: 10px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  color: #df2814;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: none;
+  font-style: normal;
+}
+
+.red {
+  color: var(--redStrong);
+}
+
+.employee-container-parent {
+  background-color: #eeefef;
+}
+
+.employee-container {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  background-color: #eeefef;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.padding-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.radio-container {
+  height: auto;
+  background-color: #e8e8e8;
+  width: 100%;
+}
+
+.radio-label {
+  text-align: center;
+}
+
+.radio-on-button:checked {
+  display: none;
+  text-align: center;
+}
+
+.radio-on-button {}
+
+.radio-off-button:checked + .radio-header-show-menu {
+  display: none;
+}
+
+.red-border-container {
+  border-top: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
+}
+
+.kontakt-boks-container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  flex-direction: row;
+}
+
+.kontakt-kort-container-flex {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 280px;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .kontakt-boks-container-flex {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .kontakt-boks-container-flex {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .mobile-meny-hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container-box-kontakt {
+    width: 100%;
+  }
+}
+
+.gjem {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+#ul + .menu-footermeny {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 8px;
+  text-align: left;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.fl-heading {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+ul.menu-footermeny {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+.menu-footermeny {
+  height: 100px;
+}
+
+.colored-line {
+  margin-top: 18px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-top: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--red);
+  height: 1px;
+}
+
+.colored-line2 {
+  margin-top: 18px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-top: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--red);
+  height: 1px;
+}
+
+.add-height {
+  height: 40px;
+  opacity: 0;
+}
+
+.tittel-kontakt-kort {
+  height: auto;
+}
+
+.addheight {
+  height: 20px;
+}
+
+.menu-footermeny li {
+  margin-bottom: 8px;
+}
+
+.partner-ikoner {
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+
+.trial:hover {
+  filter: invert(27%) sepia(46%) saturate(2925%) hue-rotate(334deg)
+    brightness(82%) contrast(94%);
+}
+
+.ikoner-venstre {
+  position: relative;
+  width: 20%;
+}
+
+.personerklering {
+  color: #d1d1d1;
+  background-color: black;
+  text-align: center;
+  height: 50px;
+  background: black;
+  font-size: 14px;
+  padding-top: 10px;
+  height: 80px;
+}
+
+.personerklering a {
+  color: #d1d1d1;
+  padding-top: 20px;
+  height: 80px;
+}
+
+.personerklering a:visited {
+  color: #d1d1d1;
+  padding-top: 20px;
+  height: 80px;
+}
+
+.returnButton {
+  position: fixed;
+  right: 20px;
+  bottom: 16px;
+  z-index: 0;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.complete-container {
+  width: 100%;
+  height: 100%;
+}
+
+.minRadio {
+  width: 100%;
+  height: 100%;
+  background-color: #eeefef;
+  display: block;
+  text-align: center;
+}
+
+/*
+
+Media query for employee
+
+*/
+
+@media only screen and (max-width: 800px) {
+  .employee {
+    min-height: 450px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .employee {
+    min-height: 450px;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
+}
+
+.open-container {
+  display: block;
+}
+
+.radioOn {
+}
+
+.radioOff:checked + .open-container {
+  display: none;
+  background-color: red;
+}
+
+.radioOff:checked + .radio-label {
+  display: none;
+}
+
+/*
+
+*/
+
+/* 
+Gjøremål for i morgen: Fikse radio-knapp med hidden. Bytte ut 25% til 33 % osv basert på skjermstørrelse i .employee {
+Fikse siste meny for flexbox-settings gitt skjermstørrelse
+Fikse bunn-ikoner basert på skjermstørrelse
+Legge til mobil-meny for kontakt i overlay i mobil-menyen.
+Fjerne gå til topp-knappen i mobil-menyen.
+/*
+*/
+
+.hover-red:hover {
+  background-color: var(--redStrong);
+  color: white;
+}
+
+.zover a:hover {
+  background-color: var(--redStrong);
+  color: white;
+}
+
+.flexbox-data:hover {
+  background-color: var(--greyBack);
+}
+
+.flexbox-data3:hover {
+  background-color: var(--redStrong);
+}
+
+.button-send:hover {
+  background-color: black;
+}
+
+li a:hover {
+  color: var(--redStrong);
+}
+
+li a:hover {
+  color: var(--redStrong);
+}
+
+li .linklist a:hover {
+  color: var(--redStrong);
+}
+
+button .dropbtn a:hover {
+  color: var(--redStrong);
+}
+
+.dropbtn:hover {
+  color: var(--redStrong);
+}
+
+.background-image-boks {
+  position: relative;
+}
+
+.background-image-boks::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("https://www.hjelseth.com/wp-content/uploads/2021/09/bakground-02.svg");
+  opacity: 0.02;
+  z-index: -1;
+}
+
+.ikoner-start {
+  width: 20%;
+}
+
+.ikoner-senter {
+  width: 40%;
+}
+
+.ikoner-hoyre {
+  width: 20%;
+}
+
+.seVareAnsatte {
+  background-color: rgb(232 232 232);
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  color: #757575;
+  text-transform: none;
+  vertical-align: middle;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.seArbeidsGrupper {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  color: #757575;
+  text-transform: none;
+  vertical-align: middle;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: black;
+
+}
+
+.valgGruppe{
+  color: var(--redStrong)
+}
+.seVareAnsatte:hover {
+  cursor: pointer;
+}
+.seArbeidsGrupper:hover {
+  color: var(--redStrong)
+}
+
+.seVareAnsatteText {
+  font-size: 28px;
+}
+
+.seVareAnsatte:hover {
+  color: var(--red);
+  width: 100%;
+}
+
+.ansatte-gruppe {
+  display: flex;
+}
+
+.arbeids-gruppe {
+  display: block;
+  width: 20%;
+}
+
+.flex-container-avdeling {
+  background-color: #eeefef;
+}
+
+.flex-container-avdeling {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  height: 200px;
+  align-items: center;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.radio-off-button:checked {
+  display: none;
+}
+
+.avdelingstekst:hover {
+  color: #df2814;
+}
+.avdelingstekst {
+  font-weight: 500;
+  display: inline-table;
+  vertical-align: middle;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+}
+
+.avdelingstekstSelected {
+  color: #df2814;
+}
+
+.avdeling-container {
+  width: 20%;
+}
+.flex-container-avdeling::before {
+}
+
+.flex-container-avdeling::after {
+}
+
+.flex-container-avdeling {
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.tittelAvdeling {
+  width: 100%;
+  height: 50px;
+  text-align-last: left;
+  padding-left: 10px;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  color: #df2814;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.email-kontakt {
+  font-size: 13pt;
+  padding: 0;
+  margin-top: 0;
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 1.55;
+  font-style: normal;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 28px;
+}
+
+.telefon-nummer {
+  padding: 0;
+  margin-top: 0;
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 1.55;
+  font-style: normal;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.employee-icons {
+  max-width: 100%;
+  position: absolute;
+  height: 48px;
+}
+
+.icon-card {
+  padding-left: 33px;
+  height: 24px;
+}
+
+.maxwidth {
+  width: 100%;
+}
+
+.maxwidth:hover{
+  color: var(--red);
+  cursor: pointer;
+}
