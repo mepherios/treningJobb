@@ -358,7 +358,7 @@ button {
 }
 
 .container-box {
-  width: 27ch;
+  width: 36ch;
   align-content: center;
 }
 
@@ -383,6 +383,21 @@ button {
     justify-content: center;
     margin-right: auto;
     padding: 10%;
+  }
+  .background-image-boks::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(https://www.hjelseth.com/wp-content/uploads/2021/09/bakground-02.svg);
+    opacity: 0.01;
+    z-index: -1;
+    /* width: 100%; */
+    /* height: 100%; */
+    background-size: cover;
   }
 }
 
@@ -410,6 +425,9 @@ button {
     width: 220px;
     height: 280px;
     justify-content: center;
+  }
+  .avdelingstekstSelected {
+    color: #df2814;
   }
 }
 
@@ -448,6 +466,8 @@ button {
   list-style: none;
   font-size: 7vw;
   margin-right: auto;
+  width: 100%;
+
 }
 
 .mobile-menu-header li {
@@ -923,6 +943,45 @@ textarea {
   .mobile-meny-hide {
     display: none;
   }
+  .maxwidth1 {
+    width: 70%;
+  }
+  
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.img-container2 {
+  width: 70%;
+}
+.mobile-menu-header li {
+  display: flex;
+}
+
+.icon-plus-model {
+  float: right;
+}
+
+icon-plus-model2 {
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .mobile-meny-hide2 {
+    display: none;
+  }
+  .maxwidth1 {
+    width: 100%;
+  }
+}
+
+.maxwidth2 {
+  width: 27%;
+  text-align-last: end;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1178,19 +1237,6 @@ button .dropbtn a:hover {
   position: relative;
 }
 
-.background-image-boks::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url("https://www.hjelseth.com/wp-content/uploads/2021/09/bakground-02.svg");
-  opacity: 0.02;
-  z-index: -1;
-}
-
 .ikoner-start {
   width: 20%;
 }
@@ -1230,7 +1276,7 @@ button .dropbtn a:hover {
   cursor: pointer;
 }
 .seArbeidsGrupper:hover {
-  color: var(--redStrong);
+  color: var(--red);
 }
 
 .seVareAnsatteText {
@@ -1271,6 +1317,18 @@ button .dropbtn a:hover {
   .avdeling-container {
     width: 20%;
   }
+  .background-image-boks::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("https://www.hjelseth.com/wp-content/uploads/2021/09/bakground-02.svg");
+    opacity: 0.02;
+    z-index: -1;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1296,10 +1354,6 @@ button .dropbtn a:hover {
   vertical-align: middle;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
-}
-
-.avdelingstekstSelected {
-  color: #df2814;
 }
 
 .flex-container-avdeling {
@@ -1359,6 +1413,6 @@ button .dropbtn a:hover {
 }
 
 .maxwidth:hover {
-  color: var(--red);
+  color: var(--redStrong);
   cursor: pointer;
 }
