@@ -429,6 +429,14 @@ button {
   .avdelingstekstSelected {
     color: #df2814;
   }
+
+  .minRadio2 {
+    width: 100%;
+    height: 100%;
+    background-color: #eeefef;
+    display: block;
+    text-align: center;
+  }
 }
 
 .menu-icon-hide2 {
@@ -467,7 +475,6 @@ button {
   font-size: 7vw;
   margin-right: auto;
   width: 100%;
-
 }
 
 .mobile-menu-header li {
@@ -946,7 +953,6 @@ textarea {
   .maxwidth1 {
     width: 70%;
   }
-  
 }
 
 .img-container {
@@ -967,7 +973,6 @@ textarea {
 }
 
 icon-plus-model2 {
-
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1339,6 +1344,15 @@ button .dropbtn a:hover {
   .avdeling-container {
     border-bottom: 2px solid #e7e7e7;
     width: 100%;
+    text-align: left;
+  }
+
+  .minRadio2 {
+    width: 100%;
+    height: 100%;
+    background-color: #eeefef;
+    display: block;
+    text-align: left;
   }
 }
 .radio-off-button:checked {
